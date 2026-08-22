@@ -8,6 +8,8 @@ omarchy plugin add https://github.com/crmne/omarchy-hyprmoncfg.git --enable -y
 install -D yazi.toml ~/.config/yazi/yazi.toml
 install -D cliamp.toml ~/.config/cliamp/config.toml
 install -D hyprland-gui.lua ~/.config/hypr/hyprland-gui.lua
+install -D .bashrc ~/.bashrc
+install -D .bash_profile ~/.bash_profile
 
 # github auth
 # gh auth login -p https -h github.com -w

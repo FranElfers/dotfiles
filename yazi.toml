@@ -1,0 +1,7 @@
+[opener]
+edit = [
+	{ run = "nano %s", block = true, for = "unix" },
+]
+
+[mgr]
+linemode = "size"

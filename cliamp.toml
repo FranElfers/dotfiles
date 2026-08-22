@@ -1,0 +1,5 @@
+theme = ""
+
+visualizer = "Bricks"
+eq_preset = "Electronic"
+eq = [6, 4, 1, -1, -2, 1, 3, 4, 5, 6]

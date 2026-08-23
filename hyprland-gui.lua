@@ -12,7 +12,7 @@ hl.config({
         rounding_power = 2.0,
     },
     general = {
-        border_size = 0,
+        border_size = 1,
         gaps_in = 3,
         gaps_out = 5,
     },
@@ -21,6 +21,7 @@ hl.config({
         sensitivity = 0.0,
         touchpad = {
             natural_scroll = true,
+            scroll_factor = 0.1,
         },
     },
 })

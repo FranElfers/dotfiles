@@ -7,6 +7,7 @@
 # All the default Omarchy aliases and functions
 # (don't mess with these directly, just overwrite them here!)
 source "$OMARCHY_PATH/default/bash/rc"
+set -h
 
 # Add your own exports, aliases, and functions here.
 #
@@ -20,3 +21,5 @@ export NVM_DIR="$HOME/.config/nvm"
 
 # Added by Antigravity CLI installer
 export PATH="/home/fran/.local/bin:$PATH"
+export PATH=$HOME/./local/bin:$PATH
+alias zed='zeditor'

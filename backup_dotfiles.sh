@@ -12,3 +12,4 @@ cp "$USER_HOME/.config/omarchy/shell.json" omarchy_shell.json
 cp "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua" workspace/1.lua
 cp "$USER_HOME/.config/cliamp/playlists/radio-stations.toml" cliamp/radio-stations.toml
 cp "$USER_HOME/.config/zed/settings.json" zed.json
+cp "$USER_HOME/.config/btop/btop.conf" btop.conf

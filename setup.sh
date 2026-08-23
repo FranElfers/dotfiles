@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# correr esto antes de conectarse a internet si se instalo en una vm
+# sudo ufw allow in on virbr0
+# sudo ufw route allow in on virbr0
+
 omarchy update -y
 omarchy pkg add nano yazi github-cli zed bun go
 
@@ -17,6 +21,8 @@ install -D .bashrc "$USER_HOME/.bashrc"
 install -D .bash_profile "$USER_HOME/.bash_profile"
 install -D omarchy_shell.json "$USER_HOME/.config/omarchy/shell.json"
 install -D workspace/1.lua "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua"
+install -D cliamp/radio-stations.toml .config/cliamp/playlists/radio-stations.toml
+
 
 # github auth
 # gh auth login -p https -h github.com -w

@@ -42,5 +42,9 @@ download_config "workspace/1.lua" "$USER_HOME/.local/state/omarchy/workspace-lay
 download_config "zed.json" "$USER_HOME/.config/zed/settings.json"
 download_config "btop.conf" "$USER_HOME/.config/btop/btop.conf"
 
+# Antra
+curl -Lo "$USER_HOME/Antra.AppImage" https://github.com/anandprtp/Antra/releases/latest/download/Antra-Linux.AppImage
+chmod +x "$USER_HOME/Antra.AppImage"
+
 # github auth
 # gh auth login -p https -h github.com -w

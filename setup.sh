@@ -9,6 +9,7 @@ omarchy pkg add nano yazi github-cli zed bun go
 
 # omarchy plugins
 omarchy plugin add https://github.com/crmne/omarchy-hyprmoncfg.git --enable -y
+omarchy plugin add https://github.com/bscott/cliamp-oma-plugin.git --enable -y
 
 # configs
 USER_HOME="${HOME}"

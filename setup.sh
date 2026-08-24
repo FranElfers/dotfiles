@@ -5,7 +5,7 @@
 # sudo ufw route allow in on virbr0
 
 omarchy update -y
-omarchy pkg add nano yazi github-cli zed bun go fuse2
+omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1
 
 # hyprmod
 curl -LsSf https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/install.sh | sh
@@ -48,3 +48,7 @@ chmod +x "$USER_HOME/Antra.AppImage"
 
 # github auth
 # gh auth login -p https -h github.com -w
+
+# swap fn & ctrl keys on macbook
+echo "options hid_apple swap_fn_leftctrl=1" | sudo tee /etc/modprobe.d/hid_apple.conf
+limine-mkinitcpio

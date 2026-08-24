@@ -15,13 +15,13 @@ USER_HOME="${HOME}"
 [ -n "$SUDO_USER" ] && USER_HOME=$(getent passwd "$SUDO_USER" | cut -d: -f6)
 
 install -D yazi.toml "$USER_HOME/.config/yazi/yazi.toml"
-install -D cliamp.toml "$USER_HOME/.config/cliamp/config.toml"
+install -D cliamp/config.toml "$USER_HOME/.config/cliamp/config.toml"
+install -D cliamp/radio-stations.toml "$USER_HOME/.config/cliamp/playlists/radio-stations.toml"
 install -D hyprland-gui.lua "$USER_HOME/.config/hypr/hyprland-gui.lua"
 install -D .bashrc "$USER_HOME/.bashrc"
 install -D .bash_profile "$USER_HOME/.bash_profile"
 install -D omarchy_shell.json "$USER_HOME/.config/omarchy/shell.json"
 install -D workspace/1.lua "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua"
-install -D cliamp/radio-stations.toml "$USER_HOME/.config/cliamp/playlists/radio-stations.toml"
 install -D zed.json "$USER_HOME/.config/zed/settings.json"
 install -D btop.conf "$USER_HOME/.config/btop/btop.conf"
 

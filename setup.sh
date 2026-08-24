@@ -5,7 +5,7 @@
 # sudo ufw route allow in on virbr0
 
 omarchy update -y
-omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1
+omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv
 
 # hyprmod
 yay -S hyprmod --noconfirm

@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "command(git status)",
+      "command(git check-ignore)",
+      "command(git ls-files)",
+      "command(virsh)",
+      "command(sysctl)",
+      "command(ps)",
+      "command(ip)",
+      "command(iptables)",
+      "command(git branch)",
+      "command(echo)",
+      "command(git diff)",
+      "command(bash -n setup.sh)"
+    ]
+  },
+  "trustedWorkspaces": [
+    "/home/fran",
+    "/home/fran/dotfiles"
+  ]
+}

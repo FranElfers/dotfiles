@@ -23,3 +23,12 @@ export NVM_DIR="$HOME/.config/nvm"
 export PATH="/home/fran/.local/bin:$PATH"
 export PATH=$HOME/./local/bin:$PATH
 alias zed='zeditor'
+
+# yazi
+function y() {
+	local tmp cwd; tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd" || builtin true
+	command rm -f -- "$tmp"
+}

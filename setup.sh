@@ -5,10 +5,10 @@
 # sudo ufw route allow in on virbr0
 
 omarchy update -y
-omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv
+omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1
 
 # hyprmod
-curl -LsSf https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/install.sh | sh
+yay -S hyprmod --noconfirm
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash

@@ -16,3 +16,5 @@ cp "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua" omarchy/workspace-1
 cp "$USER_HOME/.config/zed/settings.json" zed.json
 cp "$USER_HOME/.config/btop/btop.conf" btop.conf
 cp "$USER_HOME/.gemini/antigravity-cli/settings.json" antigravity.json
+cp "$USER_HOME/.config/omarchy/audio-rules.json" omarchy/audio-rules.json
+cp "$USER_HOME/.config/omarchy/audio-preferences.json" omarchy/audio-preferences.json

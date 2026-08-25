@@ -7,29 +7,26 @@
           "id": "omarchy.indicators"
         },
         {
-          "birthYear": 2001,
-          "format": "ddd d MMM HH:mm",
-          "formatAlt": "d MMMM 'W'ww yyyy",
           "id": "omarchy.clock",
+          "birthYear": 2001,
+          "format": "yyyy-MM-dd HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
           "lifeExpectancy": 90,
           "verticalFormat": "HH\n—\nmm"
-        },
-        {
-          "id": "omarchy.keyboard-layout"
         },
         {
           "id": "omarchy.weather"
         },
         {
           "id": "omarchy.system-update"
+        },
+        {
+          "id": "io.github.bscott.cliamp"
         }
       ],
       "left": [
         {
-          "id": "omarchy.menu"
-        },
-        {
-          "id": "omarchy.workspaces"
+          "id": "io.github.thetrueferret.decent-workspaces"
         }
       ],
       "right": [
@@ -37,25 +34,32 @@
           "id": "omarchy.tray"
         },
         {
-          "id": "io.github.bscott.cliamp"
+          "id": "io.github.edgarsilva.hw-monitor",
+          "mode": "labels"
         },
         {
-          "id": "crmne.hyprmoncfg"
+          "id": "ussego.otoru"
         },
         {
           "id": "omarchy.agents"
         },
         {
-          "id": "omarchy.bluetooth"
+          "id": "ssupt.bluetooth-audio"
         },
         {
           "id": "omarchy.network"
         },
         {
-          "id": "omarchy.audio"
+          "id": "ssupt.audio-control"
+        },
+        {
+          "id": "crmne.hyprmoncfg"
         },
         {
           "id": "omarchy.monitor"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
         },
         {
           "id": "omarchy.power",
@@ -70,6 +74,26 @@
     "lock": 300,
     "screensaver": 150
   },
-  "plugins": [],
-  "version": 1
+  "plugins": [
+    {
+      "id": "io.github.sirjul1337.lock-explorer",
+      "design": "poster",
+      "unlock": "fade",
+      "unlockMs": 800,
+      "avatar": "/home/fran/Pictures/fran-alaia.jpg"
+    },
+    {
+      "id": "b.okomart",
+      "windowMode": "floating"
+    }
+  ],
+  "version": 1,
+  "disabledPlugins": [
+    "omarchy.lock",
+    "omarchy.audio"
+  ],
+  "cloneSourceRestores": [
+    "io.github.sirjul1337.lock-explorer",
+    "ssupt.audio-control"
+  ]
 }

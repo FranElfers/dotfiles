@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "appRules": [],
+  "devices": {
+    "aliases": {},
+    "favorites": [
+      "effect_input.filter-chain-speakers",
+      "effect_output.filter-chain-mic"
+    ],
+    "hidden": [
+      "alsa_input.pci-0000_04_00.3.HiFi__Mic__source",
+      "alsa_output.pci-0000_04_00.3.HiFi__Speaker__sink"
+    ]
+  }
+}

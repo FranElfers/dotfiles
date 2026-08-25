@@ -7,6 +7,22 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "git": {
+    "gutter_debounce": 0,
+    "git_gutter": "tracked_files"
+  },
+  "inline_code_actions": false,
+  "gutter": {
+    "git_gutter_width": {
+      "custom": 10.0
+    },
+    "min_line_number_digits": 1,
+    "folds": true,
+    "runnables": false,
+    "line_numbers": true,
+    "bookmarks": false,
+    "breakpoints": false
+  },
   "cli_default_open_behavior": "new_window",
   "git_panel": {
     "tree_view": true,

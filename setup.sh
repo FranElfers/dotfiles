@@ -19,6 +19,13 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 # omarchy plugins
 omarchy plugin add https://github.com/crmne/omarchy-hyprmoncfg.git --enable -y
 omarchy plugin add https://github.com/bscott/cliamp-oma-plugin.git --enable -y
+omarchy plugin add https://github.com/SirJul1337/omarchy-lock-explorer.git --enable
+omarchy plugin add https://github.com/brianblakely/omarchy-plugins.git --enable -y
+omarchy plugin add https://github.com/ussego/otoru.git --enable -y
+omarchy plugin add https://github.com/TheTrueFerret/omarchy-decent-workspaces.git --enable -y
+omarchy plugin add https://github.com/ssupt/omarchy-bluetooth-audio.git --enable -y
+omarchy plugin add https://github.com/edgarsilva/omarchy-hw-monitor.git --enable -y
+omarchy plugin add https://github.com/ssupt/omarchy-audio-control.git --enable -y
 
 # configs
 USER_HOME="${HOME}"
@@ -55,6 +62,15 @@ chmod +x "$USER_HOME/Antra.AppImage"
 # github auth
 # gh auth login -p https -h github.com -w
 
+# set lock screen
+omarchy restart shell
+omarchy-shell lock setDesign poster
+omarchy-shell lock setUnlockDuration 600
+omarchy-shell lock setUnlockAnimation fade
+
 # swap fn & ctrl keys on macbook
 # echo "options hid_apple swap_fn_leftctrl=1" | sudo tee /etc/modprobe.d/hid_apple.conf
 # limine-mkinitcpio
+
+# fix macbook T2 speakers
+curl -sSL https://raw.githubusercontent.com/ngodn/linux-t2-mbp16_1-arch-audio-setup/main/install.sh | bash

@@ -1,5 +1,5 @@
 {
-  "model": "Gemini 3.1 Pro (Low)",
+  "model": "Gemini 3.1 Pro (High)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -14,12 +14,19 @@
       "command(git branch)",
       "command(echo)",
       "command(git diff)",
-      "command(bash -n setup.sh)"
+      "command(bash -n setup.sh)",
+      "command(go mod init)",
+      "command(go fmt ./...)",
+      "command(go build )",
+      "command(cat)",
+      "command(go test -v ./...)",
+      "command(mkdir)"
     ]
   },
   "trustedWorkspaces": [
     "/home/fran",
     "/home/fran/dotfiles",
-    "/home/fran/linux-t2-mbp16_1-arch-audio-setup"
+    "/home/fran/linux-t2-mbp16_1-arch-audio-setup",
+    "/home/fran/Projects/cam-recorder"
   ]
 }

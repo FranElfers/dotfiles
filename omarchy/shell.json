@@ -50,7 +50,7 @@
           "id": "omarchy.network"
         },
         {
-          "id": "ssupt.audio-control"
+          "id": "omarchy.audio"
         },
         {
           "id": "crmne.hyprmoncfg"
@@ -89,11 +89,9 @@
   ],
   "version": 1,
   "disabledPlugins": [
-    "omarchy.lock",
-    "omarchy.audio"
+    "omarchy.lock"
   ],
   "cloneSourceRestores": [
-    "io.github.sirjul1337.lock-explorer",
-    "ssupt.audio-control"
+    "io.github.sirjul1337.lock-explorer"
   ]
 }

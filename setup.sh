@@ -13,6 +13,9 @@ yay -S hyprmod --noconfirm
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash
 
+# pnpm
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
 # omarchy plugins
 omarchy plugin add https://github.com/crmne/omarchy-hyprmoncfg.git --enable -y
 omarchy plugin add https://github.com/bscott/cliamp-oma-plugin.git --enable -y
@@ -39,8 +42,8 @@ download_config "hypr/input.lua" "$USER_HOME/.config/hypr/input.lua"
 download_config "hypr/hyprland.lua" "$USER_HOME/.config/hypr/hyprland.lua"
 download_config ".bashrc" "$USER_HOME/.bashrc"
 download_config ".bash_profile" "$USER_HOME/.bash_profile"
-download_config "omarchy_shell.json" "$USER_HOME/.config/omarchy/shell.json"
-download_config "workspace/1.lua" "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua"
+download_config "omarchy/shell.json" "$USER_HOME/.config/omarchy/shell.json"
+download_config "omarchy/workspace-1.lua" "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua"
 download_config "zed.json" "$USER_HOME/.config/zed/settings.json"
 download_config "btop.conf" "$USER_HOME/.config/btop/btop.conf"
 download_config "antigravity.json" "$USER_HOME/.gemini/antigravity-cli/settings.json"

@@ -11,8 +11,8 @@ cp "$USER_HOME/.config/hypr/input.lua" hypr/input.lua
 cp "$USER_HOME/.config/hypr/hyprland.lua" hypr/hyprland.lua
 cp "$USER_HOME/.bashrc" .bashrc
 cp "$USER_HOME/.bash_profile" .bash_profile
-cp "$USER_HOME/.config/omarchy/shell.json" omarchy_shell.json
-cp "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua" workspace/1.lua
+cp "$USER_HOME/.config/omarchy/shell.json" omarchy/shell.json
+cp "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua" omarchy/workspace-1.lua
 cp "$USER_HOME/.config/zed/settings.json" zed.json
 cp "$USER_HOME/.config/btop/btop.conf" btop.conf
 cp "$USER_HOME/.gemini/antigravity-cli/settings.json" antigravity.json

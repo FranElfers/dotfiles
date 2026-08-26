@@ -34,31 +34,30 @@ USER_HOME="${HOME}"
 REPO_RAW_URL="https://raw.githubusercontent.com/FranElfers/dotfiles/master"
 
 download_config() {
-    local src="$1"
-    local dest="$2"
+    local dest="$USER_HOME/$1"
     mkdir -p "$(dirname "$dest")"
-    curl -fsSL "$REPO_RAW_URL/$src" -o "$dest"
+    curl -fsSL "$REPO_RAW_URL/$1" -o "$dest"
     [ -n "$SUDO_USER" ] && chown "$SUDO_USER:" "$dest"
 }
 
-download_config "yazi.toml" "$USER_HOME/.config/yazi/yazi.toml"
-download_config "cliamp/config.toml" "$USER_HOME/.config/cliamp/config.toml"
-download_config "cliamp/radio-stations.toml" "$USER_HOME/.config/cliamp/playlists/radio-stations.toml"
-download_config "hypr/hyprland-gui.lua" "$USER_HOME/.config/hypr/hyprland-gui.lua"
-download_config "hypr/input.lua" "$USER_HOME/.config/hypr/input.lua"
-download_config "hypr/hyprland.lua" "$USER_HOME/.config/hypr/hyprland.lua"
-download_config "hypr/monitors.lua" "$USER_HOME/.config/hypr/monitors.lua"
-download_config ".bashrc" "$USER_HOME/.bashrc"
-download_config ".bash_profile" "$USER_HOME/.bash_profile"
-download_config "omarchy/shell.json" "$USER_HOME/.config/omarchy/shell.json"
-download_config "omarchy/audio-rules.json" "$USER_HOME/.config/omarchy/audio-rules.json"
-download_config "omarchy/audio-preferences.json" "$USER_HOME/.config/omarchy/audio-preferences.json"
-download_config "omarchy/workspace-1.lua" "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua"
-download_config "omarchy/battery" "$USER_HOME/.local/state/omarchy/powerprofiles/battery"
-download_config "syncthing/config.xml" "$USER_HOME/.local/state/syncthing/config.xml"
-download_config "zed.json" "$USER_HOME/.config/zed/settings.json"
-download_config "btop.conf" "$USER_HOME/.config/btop/btop.conf"
-download_config "antigravity.json" "$USER_HOME/.gemini/antigravity-cli/settings.json"
+download_config .config/yazi/yazi.toml
+download_config .config/cliamp/config.toml
+download_config .config/cliamp/playlists/radio-stations.toml
+download_config .config/hypr/hyprland-gui.lua
+download_config .config/hypr/input.lua
+download_config .config/hypr/hyprland.lua
+download_config .config/hypr/monitors.lua
+download_config .bashrc
+download_config .bash_profile
+download_config .config/omarchy/shell.json
+download_config .config/omarchy/audio-rules.json
+download_config .config/omarchy/audio-preferences.json
+download_config .local/state/omarchy/workspace-layouts/1.lua
+download_config .local/state/omarchy/powerprofiles/battery
+download_config .local/state/syncthing/config.xml
+download_config .config/zed/settings.json
+download_config .config/btop/btop.conf
+download_config .gemini/antigravity-cli/settings.json
 
 # Antra
 curl -Lo "$USER_HOME/Antra.AppImage" https://github.com/anandprtp/Antra/releases/latest/download/Antra-Linux.AppImage

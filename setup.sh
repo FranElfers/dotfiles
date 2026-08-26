@@ -7,26 +7,21 @@
 omarchy update -y
 omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv syncthing
 
-# hyprmod
+# hyprmod, omazed
 yay -S hyprmod omazed --noconfirm
 omazed setup
 
-# nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash
-
-# pnpm
-curl -fsSL https://get.pnpm.io/install.sh | sh -
-
 # omarchy plugins
-omarchy plugin add https://github.com/crmne/omarchy-hyprmoncfg.git --enable -y
-omarchy plugin add https://github.com/bscott/cliamp-oma-plugin.git --enable -y
-omarchy plugin add https://github.com/SirJul1337/omarchy-lock-explorer.git --enable
-omarchy plugin add https://github.com/brianblakely/omarchy-plugins.git --enable -y
-omarchy plugin add https://github.com/ussego/otoru.git --enable -y
-omarchy plugin add https://github.com/TheTrueFerret/omarchy-decent-workspaces.git --enable -y
-omarchy plugin add https://github.com/ssupt/omarchy-bluetooth-audio.git --enable -y
-omarchy plugin add https://github.com/edgarsilva/omarchy-hw-monitor.git --enable -y
-omarchy plugin add https://github.com/ssupt/omarchy-audio-control.git --enable -y
+omarchy plugin add https://github.com/crmne/omarchy-hyprmoncfg.git --enable -y &
+omarchy plugin add https://github.com/bscott/cliamp-oma-plugin.git --enable -y &
+omarchy plugin add https://github.com/SirJul1337/omarchy-lock-explorer.git --enable -y &
+omarchy plugin add https://github.com/brianblakely/omarchy-plugins.git --enable -y &
+omarchy plugin add https://github.com/ussego/otoru.git --enable -y &
+omarchy plugin add https://github.com/TheTrueFerret/omarchy-decent-workspaces.git --enable -y &
+omarchy plugin add https://github.com/ssupt/omarchy-bluetooth-audio.git --enable -y &
+omarchy plugin add https://github.com/edgarsilva/omarchy-hw-monitor.git --enable -y &
+omarchy plugin add https://github.com/ssupt/omarchy-audio-control.git --enable -y &
+wait
 
 # configs
 USER_HOME="${HOME}"
@@ -46,6 +41,7 @@ download_config .bashrc
 download_config .config/btop/btop.conf
 download_config .config/cliamp/config.toml
 download_config .config/cliamp/playlists/radio-stations.toml
+download_config .config/gtk-3.0/bookmarks
 download_config .config/hypr/hyprland-gui.lua
 download_config .config/hypr/hyprland.lua
 download_config .config/hypr/input.lua
@@ -60,8 +56,11 @@ download_config .local/state/omarchy/powerprofiles/battery
 download_config .local/state/omarchy/workspace-layouts/1.lua
 download_config .local/state/syncthing/config.xml
 
-# Antra
-curl -Lo "$USER_HOME/Antra.AppImage" https://github.com/anandprtp/Antra/releases/latest/download/Antra-Linux.AppImage
+# nvm, pnpm, antra
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash &
+curl -fsSL https://get.pnpm.io/install.sh | sh - &
+curl -Lo "$USER_HOME/Antra.AppImage" https://github.com/anandprtp/Antra/releases/latest/download/Antra-Linux.AppImage &
+wait
 chmod +x "$USER_HOME/Antra.AppImage"
 
 # github auth

@@ -5,7 +5,7 @@
 # sudo ufw route allow in on virbr0
 
 omarchy update -y
-omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv
+omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv syncthing
 
 # hyprmod
 yay -S hyprmod --noconfirm
@@ -54,6 +54,8 @@ download_config "omarchy/shell.json" "$USER_HOME/.config/omarchy/shell.json"
 download_config "omarchy/audio-rules.json" "$USER_HOME/.config/omarchy/audio-rules.json"
 download_config "omarchy/audio-preferences.json" "$USER_HOME/.config/omarchy/audio-preferences.json"
 download_config "omarchy/workspace-1.lua" "$USER_HOME/.local/state/omarchy/workspace-layouts/1.lua"
+download_config "omarchy/battery" "$USER_HOME/.local/state/omarchy/powerprofiles/battery"
+download_config "syncthing/config.xml" "$USER_HOME/.local/state/syncthing/config.xml"
 download_config "zed.json" "$USER_HOME/.config/zed/settings.json"
 download_config "btop.conf" "$USER_HOME/.config/btop/btop.conf"
 download_config "antigravity.json" "$USER_HOME/.gemini/antigravity-cli/settings.json"
@@ -70,7 +72,7 @@ omarchy restart shell
 
 # swap fn & ctrl keys on macbook
 # echo "options hid_apple swap_fn_leftctrl=1" | sudo tee /etc/modprobe.d/hid_apple.conf
-# limine-mkinitcpio
+# sudo mkinitcpio -P
 
 # fix macbook T2 speakers
-curl -sSL https://raw.githubusercontent.com/ngodn/linux-t2-mbp16_1-arch-audio-setup/main/install.sh | bash
+# curl -sSL https://raw.githubusercontent.com/ngodn/linux-t2-mbp16_1-arch-audio-setup/main/install.sh | bash

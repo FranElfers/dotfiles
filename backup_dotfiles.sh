@@ -9,6 +9,7 @@ cp "$USER_HOME/.config/cliamp/playlists/radio-stations.toml" cliamp/radio-statio
 cp "$USER_HOME/.config/hypr/hyprland-gui.lua" hypr/hyprland-gui.lua
 cp "$USER_HOME/.config/hypr/input.lua" hypr/input.lua
 cp "$USER_HOME/.config/hypr/hyprland.lua" hypr/hyprland.lua
+cp "$USER_HOME/.config/hypr/monitors.lua" hypr/monitors.lua
 cp "$USER_HOME/.bashrc" .bashrc
 cp "$USER_HOME/.bash_profile" .bash_profile
 cp "$USER_HOME/.config/omarchy/shell.json" omarchy/shell.json

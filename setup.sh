@@ -47,6 +47,7 @@ download_config "cliamp/radio-stations.toml" "$USER_HOME/.config/cliamp/playlist
 download_config "hypr/hyprland-gui.lua" "$USER_HOME/.config/hypr/hyprland-gui.lua"
 download_config "hypr/input.lua" "$USER_HOME/.config/hypr/input.lua"
 download_config "hypr/hyprland.lua" "$USER_HOME/.config/hypr/hyprland.lua"
+download_config "hypr/monitors.lua" "$USER_HOME/.config/hypr/monitors.lua"
 download_config ".bashrc" "$USER_HOME/.bashrc"
 download_config ".bash_profile" "$USER_HOME/.bash_profile"
 download_config "omarchy/shell.json" "$USER_HOME/.config/omarchy/shell.json"
@@ -66,9 +67,6 @@ chmod +x "$USER_HOME/Antra.AppImage"
 
 # set lock screen
 omarchy restart shell
-omarchy-shell lock setDesign poster
-omarchy-shell lock setUnlockDuration 600
-omarchy-shell lock setUnlockAnimation fade
 
 # swap fn & ctrl keys on macbook
 # echo "options hid_apple swap_fn_leftctrl=1" | sudo tee /etc/modprobe.d/hid_apple.conf

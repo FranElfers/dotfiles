@@ -49,6 +49,7 @@ download_config .config/hypr/monitors.lua
 download_config .config/omarchy/audio-preferences.json
 download_config .config/omarchy/audio-rules.json
 download_config .config/omarchy/shell.json
+download_config .config/omarchy/ussego.otoru.json
 download_config .config/yazi/yazi.toml
 download_config .config/zed/settings.json
 download_config .gemini/antigravity-cli/settings.json

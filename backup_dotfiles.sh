@@ -17,6 +17,7 @@ backup_config .config/hypr/monitors.lua
 backup_config .config/omarchy/audio-preferences.json
 backup_config .config/omarchy/audio-rules.json
 backup_config .config/omarchy/shell.json
+backup_config .config/omarchy/ussego.otoru.json
 backup_config .config/yazi/yazi.toml
 backup_config .config/zed/settings.json
 backup_config .gemini/antigravity-cli/settings.json

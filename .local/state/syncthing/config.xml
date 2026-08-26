@@ -51,6 +51,9 @@
         <device id="IZH4XRK-5JGQGHO-IP5VME3-WEK45UT-LPTLP5T-CKBUBHE-FB4QTBH-NESRSQX" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
+        <device id="O2D3AEK-YMJQTCJ-MII55XU-3RXZZWI-6BHZXDA-WFEK2FL-KHX744I-QQFEHQY" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <device id="6OQJTEJ-I5ZS4JM-WCAAWKB-7QS5SK3-WHWWZG2-PKK36VR-UILIXKB-VPEN5AL" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
@@ -146,6 +149,17 @@
         <numConnections>0</numConnections>
     </device>
     <device id="IZH4XRK-5JGQGHO-IP5VME3-WEK45UT-LPTLP5T-CKBUBHE-FB4QTBH-NESRSQX" name="minipc" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+        <numConnections>0</numConnections>
+    </device>
+    <device id="O2D3AEK-YMJQTCJ-MII55XU-3RXZZWI-6BHZXDA-WFEK2FL-KHX744I-QQFEHQY" name="nave" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
         <autoAcceptFolders>false</autoAcceptFolders>

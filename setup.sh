@@ -8,7 +8,8 @@ omarchy update -y
 omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv syncthing
 
 # hyprmod
-yay -S hyprmod --noconfirm
+yay -S hyprmod omazed --noconfirm
+omazed setup
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash

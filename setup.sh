@@ -5,7 +5,7 @@
 # sudo ufw route allow in on virbr0
 
 omarchy update -y
-omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv syncthing
+omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv syncthing flatpak
 
 # hyprmod, omazed
 yay -S hyprmod omazed --noconfirm
@@ -57,9 +57,10 @@ download_config .local/state/omarchy/powerprofiles/battery
 download_config .local/state/omarchy/workspace-layouts/1.lua
 download_config .local/state/syncthing/config.xml
 
-# nvm, pnpm, antra
+# nvm, pnpm, antigravity, antra
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash &
 curl -fsSL https://get.pnpm.io/install.sh | sh - &
+curl -fsSL https://antigravity.google/cli/install.sh | bash
 curl -Lo "$USER_HOME/Antra.AppImage" https://github.com/anandprtp/Antra/releases/latest/download/Antra-Linux.AppImage &
 wait
 chmod +x "$USER_HOME/Antra.AppImage"

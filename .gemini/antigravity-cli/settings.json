@@ -1,5 +1,6 @@
 {
-  "model": "Gemini 3.1 Pro (High)",
+  "allowNonWorkspaceAccess": true,
+  "model": "Gemini 3.1 Pro (Low)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -18,15 +19,38 @@
       "command(go mod init)",
       "command(go fmt ./...)",
       "command(go build )",
+      "command(go test)",
+      "command(mkdir)",
+      "command(file)",
+      "command(pidof)",
+      "command(ls)",
       "command(cat)",
-      "command(go test -v ./...)",
-      "command(mkdir)"
+      "command(grep)",
+      "command(tail)",
+      "command(pmap -x $(pidof quickshell | awk '{print $1}') | sort -n -k3 | tail -n 20)",
+      "command(which)",
+      "command(cat /proc/$(pidof quickshell | awk '{print $1}')/environ | tr '\\0' '\\n' | grep -iE 'gl|wayland|qt|mesa|render')",
+      "command(lspci)",
+      "command(qmlprofiler)",
+      "command(heaptrack_print)",
+      "command(head)",
+      "command(quickshell)",
+      "command(pmap -x $(pidof quickshell | awk '{print $1}') | tail -n 1)",
+      "command(cat $(which omarchy-launch-shell))",
+      "command(cat /proc/$(pidof quickshell | awk '{print $1}')/environ | tr '\\0' '\\n' | grep PATH)",
+      "command(pmap -x $(pidof quickshell | awk '{print $1}') | grep llvm)",
+      "command(vulkaninfo)",
+      "command(strings)",
+      "command(/usr/bin/quickshell)",
+      "command(sleep)",
+      "command(kill $child)"
     ]
   },
   "trustedWorkspaces": [
     "/home/fran",
     "/home/fran/dotfiles",
     "/home/fran/linux-t2-mbp16_1-arch-audio-setup",
-    "/home/fran/Projects/cam-recorder"
+    "/home/fran/Projects/cam-recorder",
+    "/home/fran/Projects/ram-usage"
   ]
 }

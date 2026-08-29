@@ -34,29 +34,37 @@
           "id": "omarchy.tray"
         },
         {
-          "id": "benekuehn.macbook-fans"
-        },
-        {
-          "id": "io.github.edgarsilva.hw-monitor",
-          "mode": "labels"
+          "id": "nocram.f1"
         },
         {
           "id": "ussego.otoru"
         },
         {
+          "id": "iamkxyz.todo"
+        },
+        {
+          "id": "io.github.edgarsilva.hw-monitor",
+          "mode": "full",
+          "showGauges": false,
+          "showValues": true,
+          "showClocks": false,
+          "ramFormat": "used",
+          "padOpacity": 0
+        },
+        {
+          "id": "benekuehn.macbook-fans"
+        },
+        {
           "id": "omarchy.agents"
         },
         {
-          "id": "ssupt.bluetooth-audio"
+          "id": "omarchy.bluetooth"
         },
         {
           "id": "omarchy.network"
         },
         {
           "id": "omarchy.audio"
-        },
-        {
-          "id": "crmne.hyprmoncfg"
         },
         {
           "id": "omarchy.monitor"
@@ -83,11 +91,11 @@
       "design": "poster",
       "unlock": "fade",
       "unlockMs": 800,
-      "avatar": "/home/fran/Pictures/fran-alaia.jpg"
+      "avatar": "/home/fran/Pictures/foto.png"
     },
     {
       "id": "b.okomart",
-      "windowMode": "floating"
+      "windowMode": "tiled"
     }
   ],
   "version": 1,

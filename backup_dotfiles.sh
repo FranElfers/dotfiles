@@ -19,6 +19,7 @@ backup_config .config/omarchy/audio-rules.json
 backup_config .config/omarchy/shell.json
 backup_config .config/omarchy/ussego.otoru.json
 backup_config .config/yazi/yazi.toml
+backup_config .config/zed/keymap.json
 backup_config .config/zed/settings.json
 backup_config .gemini/antigravity-cli/settings.json
 backup_config .local/state/omarchy/powerprofiles/battery

@@ -60,6 +60,7 @@ download_configs() {
     download_config .config/omarchy/shell.json
     download_config .config/omarchy/ussego.otoru.json
     download_config .config/yazi/yazi.toml
+    download_config .config/zed/keymap.json
     download_config .config/zed/settings.json
     download_config .gemini/antigravity-cli/settings.json
     download_config .local/state/omarchy/powerprofiles/battery

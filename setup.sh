@@ -38,6 +38,8 @@ download_configs() {
 
     REPO_RAW_URL="https://raw.githubusercontent.com/FranElfers/dotfiles/master"
 
+    curl -fSL "$REPO_RAW_URL/gitignore" -o "$USER_HOME/.gitignore"
+
     download_config() {
         local dest="$USER_HOME/$1"
         mkdir -p "$(dirname "$dest")"
@@ -57,6 +59,7 @@ download_configs() {
     download_config .config/hypr/monitors.lua
     download_config .config/omarchy/audio-preferences.json
     download_config .config/omarchy/audio-rules.json
+    download_config .config/omarchy/branding/screensaver.txt
     download_config .config/omarchy/shell.json
     download_config .config/omarchy/ussego.otoru.json
     download_config .config/yazi/yazi.toml
@@ -66,10 +69,10 @@ download_configs() {
     download_config .local/bin/quickshell
     download_config .local/state/omarchy/powerprofiles/battery
     download_config .local/state/omarchy/workspace-layouts/1.lua
-    download_config .local/state/syncthing/config.xml
 }
 
 download_external_apps() {
+    flatpak install flathub com.stremio.Stremio -y
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash &
     curl -fsSL https://get.pnpm.io/install.sh | sh - &
     curl -fsSL https://antigravity.google/cli/install.sh | bash
@@ -79,6 +82,7 @@ download_external_apps() {
 }
 
 end() {
+    sudo systemctl enable sshd
     omarchy restart shell
 }
 

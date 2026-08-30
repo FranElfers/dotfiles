@@ -1,5 +1,7 @@
 .bash_history
 .bash_logout
+.bash_profile
+.bashrc
 .cache/
 *cache*.json
 .claude/themes/omarchy.json
@@ -18,6 +20,7 @@
 .config/gh/hosts.yml
 .config/GIMP/
 .config/git/config
+.config/GitHub Desktop/
 .config/go/
 .config/google-chrome*/
 .config/gtk-3.0/bookmarks
@@ -26,9 +29,14 @@
 .config/hypr/input.lua
 .config/hypr/monitors.lua
 .config/ibus/
+.config/microsoft-edge*/
 .config/mise/config.toml
 .config/mozilla/
+.config/Omacom/omacalc.conf
+.config/Omacom/omawrite.conf
 .config/omarchy/audio-preferences.json
+.config/omarchy/branding/about.txt
+.config/omarchy/branding/screensaver.txt
 .config/omarchy/hooks/theme-set*
 .config/omarchy/*.json*.lock
 .config/omarchy/shell.json
@@ -40,6 +48,8 @@
 .config/systemd/user/default.target.wants/syncthing.service
 .config/unity3d/LandCrab/PEAK/steam_autocloud.vdf
 .config/wayvibes/input_device_path
+.config/yazi/yazi.toml
+.config/zed/keymap.json
 .config/zed/settings.json
 .config/zed/themes/omazed.json
 *.db
@@ -110,9 +120,4 @@ Videos/
 Work/
 .XCompose
 Zomboid/
-.config/GitHub Desktop/
-.bashrc
-.bash_profile
-.config/Omacom/omawrite.conf
-.config/zed/keymap.json
-.config/microsoft-edge*/
+.config/cliamp/playlists/radio-stations.toml

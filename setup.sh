@@ -59,6 +59,7 @@ download_configs() {
     download_config .config/hypr/monitors.lua
     download_config .config/omarchy/audio-preferences.json
     download_config .config/omarchy/audio-rules.json
+    download_config .config/omarchy/branding/about.txt
     download_config .config/omarchy/branding/screensaver.txt
     download_config .config/omarchy/shell.json
     download_config .config/omarchy/ussego.otoru.json

@@ -113,3 +113,17 @@ done
 
 clear
 echo -e "\n¡Instalación completada!"
+
+# correr esto antes de conectarse a internet si se instalo en una vm
+# sudo ufw allow in on virbr0
+# sudo ufw route allow in on virbr0
+
+# github auth
+# gh auth login -p https -h github.com -w
+
+# swap fn & ctrl keys on macbook
+# echo "options hid_apple swap_fn_leftctrl=1" | sudo tee /etc/modprobe.d/hid_apple.conf
+# sudo mkinitcpio -P
+
+# fix macbook T2 speakers
+# curl -sSL https://raw.githubusercontent.com/ngodn/linux-t2-mbp16_1-arch-audio-setup/main/install.sh | bash

@@ -15,7 +15,7 @@ install_packages_pacman() {
 }
 
 install_packages_aur() {
-    yay -S hyprmod omazed --noconfirm
+    yay -S hyprmod github-desktop-bin omazed --noconfirm
     omazed setup
 }
 

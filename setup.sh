@@ -63,6 +63,7 @@ download_configs() {
     download_config .config/zed/keymap.json
     download_config .config/zed/settings.json
     download_config .gemini/antigravity-cli/settings.json
+    download_config .local/bin/quickshell
     download_config .local/state/omarchy/powerprofiles/battery
     download_config .local/state/omarchy/workspace-layouts/1.lua
     download_config .local/state/syncthing/config.xml

@@ -1,0 +1,3 @@
+#!/bin/bash
+export QSG_RHI_BACKEND=vulkan
+exec /usr/bin/quickshell "$@"

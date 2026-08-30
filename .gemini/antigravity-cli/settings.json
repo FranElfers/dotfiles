@@ -43,7 +43,13 @@
       "command(strings)",
       "command(/usr/bin/quickshell)",
       "command(sleep)",
-      "command(kill $child)"
+      "command(kill $child)",
+      "command(ldd)",
+      "command(sort)",
+      "command(cat $(which omarchy-restart-shell))",
+      "command(kill -0 $child)",
+      "command(env | grep -i 'wayland\\|display\\|vulkan')",
+      "command(killall quickshell)"
     ]
   },
   "trustedWorkspaces": [

@@ -22,6 +22,7 @@ backup_config .config/yazi/yazi.toml
 backup_config .config/zed/keymap.json
 backup_config .config/zed/settings.json
 backup_config .gemini/antigravity-cli/settings.json
+backup_config .local/bin/quickshell
 backup_config .local/state/omarchy/powerprofiles/battery
 backup_config .local/state/omarchy/workspace-layouts/1.lua
 backup_config .local/state/syncthing/config.xml

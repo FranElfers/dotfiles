@@ -12,6 +12,7 @@
 .config/cliamp/cliamp.sock*
 .config/cliamp/config.toml
 .config/cliamp/history.toml
+.config/cliamp/playlists/radio-stations.toml
 .config/cliamp/resume.json
 .config/cliamp/spotify_credentials.json
 .config/dconf/user
@@ -99,6 +100,7 @@ go/pkg/
 *.log
 logs*
 .minecraft
+Movies/
 Music/
 .node_repl_history
 .npm/
@@ -120,4 +122,3 @@ Videos/
 Work/
 .XCompose
 Zomboid/
-.config/cliamp/playlists/radio-stations.toml

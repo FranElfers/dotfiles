@@ -49,7 +49,17 @@
       "command(cat $(which omarchy-restart-shell))",
       "command(kill -0 $child)",
       "command(env | grep -i 'wayland\\|display\\|vulkan')",
-      "command(killall quickshell)"
+      "command(killall quickshell)",
+      "command(omarchy)",
+      "command(hyprctl)",
+      "command(find /usr/share/ -name \"*hyprland*lua*\" -o -name \"*lua*hyprland*\")",
+      "command(echo 'hl.layerrule(\"animation slide\", \"omarchy-menu\")' \u003e /tmp/test_layerrule.lua \u0026\u0026 echo 'require(\"test_layerrule\")' \u003e\u003e ~/.config/hypr/hyprland.lua \u0026\u0026 hyprctl reload \u0026\u0026 sleep 1 \u0026\u0026 hyprctl configerrors)",
+      "command(sed -i '$d' ~/.config/hypr/hyprland.lua)",
+      "command(echo 'hl.config({ layerrule = { \"animation slide, omarchy-menu\" } })' \u003e\u003e ~/.config/hypr/looknfeel.lua \u0026\u0026 hyprctl reload \u0026\u0026 sleep 1 \u0026\u0026 hyprctl configerrors)",
+      "command(echo 'hl.config({ layerrule = { \"animation slide, omarchy-bar\" } })' \u003e\u003e ~/.config/hypr/looknfeel.lua \u0026\u0026 hyprctl reload)",
+      "command(sed -i '$d' ~/.config/hypr/looknfeel.lua)",
+      "command(sed -n '1010,1025p' /home/fran/.config/omarchy/plugins/fran.menu/Menu.qml)",
+      "command(sed -n '1020,1050p' /home/fran/.config/omarchy/plugins/fran.menu/Menu.qml)"
     ]
   },
   "trustedWorkspaces": [

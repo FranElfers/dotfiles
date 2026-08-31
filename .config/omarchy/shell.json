@@ -1,108 +1,104 @@
 {
-  "bar": {
-    "centerAnchor": "omarchy.clock",
-    "layout": {
-      "center": [
-        {
-          "id": "omarchy.indicators"
+    "bar": {
+        "centerAnchor": "omarchy.clock",
+        "layout": {
+            "center": [
+                {
+                    "id": "omarchy.indicators"
+                },
+                {
+                    "id": "omarchy.weather"
+                },
+                {
+                    "id": "omarchy.clock",
+                    "birthYear": 2001,
+                    "format": "yyyy-MM-dd HH:mm",
+                    "formatAlt": "d MMMM 'W'ww yyyy",
+                    "lifeExpectancy": 90,
+                    "verticalFormat": "HH\n—\nmm"
+                },
+                {
+                    "id": "omarchy.system-update"
+                },
+                {
+                    "id": "io.github.bscott.cliamp"
+                }
+            ],
+            "left": [
+                {
+                    "id": "io.github.thetrueferret.decent-workspaces"
+                }
+            ],
+            "right": [
+                {
+                    "id": "omarchy.tray"
+                },
+                {
+                    "id": "nocram.f1"
+                },
+                {
+                    "id": "ussego.otoru"
+                },
+                {
+                    "id": "iamkxyz.todo"
+                },
+                {
+                    "id": "io.github.edgarsilva.hw-monitor",
+                    "mode": "full",
+                    "showGauges": false,
+                    "showValues": true,
+                    "showClocks": false,
+                    "ramFormat": "used",
+                    "padOpacity": 0
+                },
+                {
+                    "id": "benekuehn.macbook-fans"
+                },
+                {
+                    "id": "omarchy.agents"
+                },
+                {
+                    "id": "omarchy.bluetooth"
+                },
+                {
+                    "id": "omarchy.network"
+                },
+                {
+                    "id": "omarchy.audio"
+                },
+                {
+                    "id": "omarchy.monitor"
+                },
+                {
+                    "id": "omarchy.keyboard-layout"
+                },
+                {
+                    "id": "omarchy.power",
+                    "showPercentage": true
+                }
+            ]
         },
-        {
-          "id": "omarchy.weather"
-        },
-        {
-          "id": "omarchy.clock",
-          "birthYear": 2001,
-          "format": "yyyy-MM-dd HH:mm",
-          "formatAlt": "d MMMM 'W'ww yyyy",
-          "lifeExpectancy": 90,
-          "verticalFormat": "HH\n—\nmm"
-        },
-        {
-          "id": "omarchy.system-update"
-        },
-        {
-          "id": "io.github.bscott.cliamp"
-        }
-      ],
-      "left": [
-        {
-          "id": "io.github.thetrueferret.decent-workspaces"
-        }
-      ],
-      "right": [
-        {
-          "id": "omarchy.tray"
-        },
-        {
-          "id": "nocram.f1"
-        },
-        {
-          "id": "ussego.otoru"
-        },
-        {
-          "id": "iamkxyz.todo"
-        },
-        {
-          "id": "io.github.edgarsilva.hw-monitor",
-          "mode": "full",
-          "showGauges": false,
-          "showValues": true,
-          "showClocks": false,
-          "ramFormat": "used",
-          "padOpacity": 0
-        },
-        {
-          "id": "benekuehn.macbook-fans"
-        },
-        {
-          "id": "omarchy.agents"
-        },
-        {
-          "id": "omarchy.bluetooth"
-        },
-        {
-          "id": "omarchy.network"
-        },
-        {
-          "id": "omarchy.audio"
-        },
-        {
-          "id": "omarchy.monitor"
-        },
-        {
-          "id": "omarchy.keyboard-layout"
-        },
-        {
-          "id": "omarchy.power",
-          "showPercentage": true
-        }
-      ]
+        "position": "top",
+        "transparent": true
     },
-    "position": "top",
-    "transparent": true
-  },
-  "idle": {
-    "lock": 300,
-    "screensaver": 150
-  },
-  "plugins": [
-    {
-      "id": "io.github.sirjul1337.lock-explorer",
-      "design": "poster",
-      "unlock": "fade",
-      "unlockMs": 800,
-      "avatar": "/home/fran/Pictures/foto.png"
+    "idle": {
+        "lock": 300,
+        "screensaver": 150
     },
-    {
-      "id": "b.okomart",
-      "windowMode": "tiled"
-    }
-  ],
-  "version": 1,
-  "disabledPlugins": [
-    "omarchy.lock"
-  ],
-  "cloneSourceRestores": [
-    "io.github.sirjul1337.lock-explorer"
-  ]
+    "plugins": [
+        {
+            "id": "io.github.sirjul1337.lock-explorer",
+            "design": "poster",
+            "unlock": "fade",
+            "unlockMs": 800,
+            "avatar": "/home/fran/Pictures/foto.png"
+        },
+        {
+            "id": "b.okomart",
+            "windowMode": "tiled"
+        }
+    ],
+    "version": 1,
+    "disabledPlugins": ["omarchy.lock"],
+    "cloneSourceRestores": ["io.github.sirjul1337.lock-explorer"]
 }

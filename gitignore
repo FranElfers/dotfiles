@@ -7,6 +7,7 @@
 .claude/themes/omarchy.json
 .codex/.tmp/
 .codex/tmp/
+.config/Antigravity IDE/*Cache*
 .config/BraveSoftware/
 .config/btop/btop.conf
 .config/chromium/
@@ -18,6 +19,7 @@
 .config/cliamp/spotify_credentials.json
 .config/dconf/user
 .config/fcitx*/
+.config/foot/foot.ini
 .config/gh/config.yml
 .config/gh/hosts.yml
 .config/GIMP/
@@ -41,6 +43,7 @@
 .config/omarchy/branding/screensaver.txt
 .config/omarchy/hooks/theme-set*
 .config/omarchy/*.json*.lock
+.config/omarchy/plugins/*bak*
 .config/omarchy/shell.json
 .config/omarchy/ussego.otoru.json
 .config/pulse/cookie
@@ -106,6 +109,7 @@ Music/
 .node_repl_history
 .npm/
 *.old
+.omp/
 .pi/agent/themes/omarchy-system.json
 Pictures/
 .pki/

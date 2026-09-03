@@ -52,6 +52,7 @@ download_configs() {
     download_config .config/btop/btop.conf
     download_config .config/cliamp/config.toml
     download_config .config/cliamp/playlists/radio-stations.toml
+    download_config .config/foot/foot.ini
     download_config .config/gtk-3.0/bookmarks
     download_config .config/hypr/hyprland-gui.lua
     download_config .config/hypr/hyprland.lua

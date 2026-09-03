@@ -7,59 +7,83 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-    "agent": {
-        "favorite_models": [],
-        "model_parameters": [],
-        "auto_compact": {
-            "threshold": "90%",
+  "prettier": {
+    "allowed": true,
+  },
+  "agent": {
+    "favorite_models": [],
+    "model_parameters": [],
+    "auto_compact": {
+      "threshold": "90%",
+    },
+  },
+  "format_on_save": "on",
+  "formatter": "prettier",
+  "tab_size": 2,
+  "zoomed_padding": true,
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": false,
+  },
+  "agent_servers": {
+    "antigravity-acp": {
+      "type": "registry",
+    },
+  },
+  "diff_view_style": "unified",
+  "git": {
+    "gutter_debounce": 0,
+    "git_gutter": "tracked_files",
+  },
+  "inline_code_actions": false,
+  "gutter": {
+    "git_gutter_width": {
+      "custom": 10.0,
+    },
+    "min_line_number_digits": 1,
+    "folds": true,
+    "runnables": false,
+    "line_numbers": true,
+    "bookmarks": false,
+    "breakpoints": false,
+  },
+  "cli_default_open_behavior": "new_window",
+  "git_panel": {
+    "tree_view": true,
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Omazed",
+    "dark": "Omazed",
+  },
+  "languages": {
+    "QML": {
+      "formatter": {
+        "external": {
+          "command": "qmlformat",
+          "arguments": ["-t", "2", "{buffer_path}"],
         },
+      },
+      "format_on_save": "on",
+      "tab_size": 2,
     },
-    "format_on_save": "on",
-    "tab_size": 4,
-    "zoomed_padding": true,
-    "tab_bar": {
-        "show_pinned_tabs_in_separate_row": false,
-        "show_tab_bar_buttons": false,
+  },
+  "lsp": {
+    "qmljs": {
+      "initialization_options": {
+        "format": false,
+      },
+      "binary": {
+        "arguments": [
+          "-E",
+          "/usr/share/omarchy/shell",
+          "-E",
+          "/usr/lib/qt6/qml",
+        ],
+      },
     },
-    "agent_servers": {
-        "antigravity-acp": {
-            "type": "registry",
-        },
-    },
-    "diff_view_style": "unified",
-    "git": {
-        "gutter_debounce": 0,
-        "git_gutter": "tracked_files",
-    },
-    "inline_code_actions": false,
-    "gutter": {
-        "git_gutter_width": {
-            "custom": 10.0,
-        },
-        "min_line_number_digits": 1,
-        "folds": true,
-        "runnables": false,
-        "line_numbers": true,
-        "bookmarks": false,
-        "breakpoints": false,
-    },
-    "cli_default_open_behavior": "new_window",
-    "git_panel": {
-        "tree_view": true,
-    },
-    "base_keymap": "VSCode",
-    "ui_font_size": 16,
-    "buffer_font_size": 15,
-    "theme": {
-        "mode": "system",
-        "light": "Omazed",
-        "dark": "Omazed",
-    },
-    "lsp": {
-        "qmljs": {
-            "binary": {
-                "arguments": ["-E", "/usr/share/omarchy/shell"],
-            },
-        },
-    },
+  },
 }

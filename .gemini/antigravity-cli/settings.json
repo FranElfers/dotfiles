@@ -1,6 +1,6 @@
 {
   "allowNonWorkspaceAccess": true,
-  "model": "Gemini 3.1 Pro (Low)",
+  "model": "Gemini 3.8 Flash (Medium)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -59,15 +59,19 @@
       "command(echo 'hl.config({ layerrule = { \"animation slide, omarchy-bar\" } })' \u003e\u003e ~/.config/hypr/looknfeel.lua \u0026\u0026 hyprctl reload)",
       "command(sed -i '$d' ~/.config/hypr/looknfeel.lua)",
       "command(sed -n '1010,1025p' /home/fran/.config/omarchy/plugins/fran.menu/Menu.qml)",
-      "command(sed -n '1020,1050p' /home/fran/.config/omarchy/plugins/fran.menu/Menu.qml)"
+      "command(sed -n '1020,1050p' /home/fran/.config/omarchy/plugins/fran.menu/Menu.qml)",
+      "command(find /usr/share/omarchy -name \"manifest.json\" 2\u003e\u00261)",
+      "command(find ~/.config/omarchy ~/.local/share/omarchy /etc/omarchy -name \"manifest.json\" 2\u003e\u00261)"
     ]
   },
+  "toolPermission": "always-proceed",
   "trustedWorkspaces": [
     "/home/fran",
     "/home/fran/dotfiles",
     "/home/fran/linux-t2-mbp16_1-arch-audio-setup",
     "/home/fran/Projects/cam-recorder",
     "/home/fran/Projects/ram-usage",
-    "/home/fran/repos/franelfers/cam-recorder"
+    "/home/fran/repos/franelfers/cam-recorder",
+    "/home/fran/repos/franelfers/omarchy-btrfs-raid-manager"
   ]
 }

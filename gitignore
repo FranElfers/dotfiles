@@ -5,6 +5,7 @@
 .cache/
 *cache*.json
 .claude/themes/omarchy.json
+.codex/.tmp/
 .codex/tmp/
 .config/BraveSoftware/
 .config/btop/btop.conf
@@ -111,6 +112,7 @@ Pictures/
 Projects/
 .pulse-cookie
 *pycache*
+*.sqlite*
 .ssh/
 .steam/
 steam.desktop

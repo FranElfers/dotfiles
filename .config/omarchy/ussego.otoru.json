@@ -1,3 +1,33 @@
 {
-  "advancedVisible": false
+  "downloadDir": "/home/fran/Downloads",
+  "autoClipboard": true,
+  "autoExtractClipboard": true,
+  "clearInputAfterDownload": true,
+  "audioFormat": "best",
+  "advancedVisible": true,
+  "outputTemplate": "%(title)s.%(ext)s",
+  "cookies": "",
+  "cookiesFromBrowser": "",
+  "cookiesProfile": "",
+  "proxy": "",
+  "rateLimit": "",
+  "concurrentFragments": "",
+  "customFormatSelector": "",
+  "customArgs": "",
+  "downloadThumbnail": false,
+  "embedThumbnail": false,
+  "embedSubs": false,
+  "includeAutoSubs": false,
+  "preferDrc": false,
+  "sponsorBlock": false,
+  "sponsorBlockCategories": [
+    "sponsor",
+    "selfpromo",
+    "interaction"
+  ],
+  "useArchive": false,
+  "saveHistory": true,
+  "history": [],
+  "subLanguage": "all",
+  "postDownloadAction": "nothing"
 }

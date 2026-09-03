@@ -17,7 +17,7 @@ hl.config({
         gaps_out = 5,
     },
     input = {
-        accel_profile = "",
+        accel_profile = "flat",
         sensitivity = 0.0,
         touchpad = {
             natural_scroll = true,
@@ -32,4 +32,14 @@ hl.animation({
     enabled = true,
     speed = 1.0,
     bezier = "default",
+})
+
+-- Monitors
+hl.monitor({
+    output = "DP-2",
+    disabled = false,
+    mode = "2560x1440@120.00Hz",
+    position = "0x0",
+    scale = 1.07,
+    cm = "srgb",
 })

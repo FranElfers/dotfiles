@@ -23,6 +23,7 @@ backup_config .config/omarchy/branding/about.txt
 backup_config .config/omarchy/branding/screensaver.txt
 backup_config .config/omarchy/shell.json
 backup_config .config/omarchy/ussego.otoru.json
+backup_config .config/opencode/opencode.json
 backup_config .config/yazi/yazi.toml
 backup_config .config/zed/keymap.json
 backup_config .config/zed/settings.json

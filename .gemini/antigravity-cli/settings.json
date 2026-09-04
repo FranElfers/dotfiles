@@ -1,6 +1,6 @@
 {
   "allowNonWorkspaceAccess": true,
-  "model": "Gemini 3.8 Flash (Medium)",
+  "model": "Gemini 3.8 Flash (High)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -72,6 +72,7 @@
     "/home/fran/Projects/cam-recorder",
     "/home/fran/Projects/ram-usage",
     "/home/fran/repos/franelfers/cam-recorder",
-    "/home/fran/repos/franelfers/omarchy-btrfs-raid-manager"
+    "/home/fran/repos/franelfers/omarchy-btrfs-raid-manager",
+    "/home/fran/Projects/liquid-sim"
   ]
 }

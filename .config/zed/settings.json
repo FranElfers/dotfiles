@@ -78,10 +78,11 @@
       },
       "binary": {
         "arguments": [
-          "-E",
-          "/usr/share/omarchy/shell",
-          "-E",
+          "-I",
+          "/home/fran/.config/omarchy/qml_imports",
+          "-I",
           "/usr/lib/qt6/qml",
+          "-E"
         ],
       },
     },

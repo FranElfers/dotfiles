@@ -46,6 +46,7 @@
 .config/omarchy/plugins/*bak*
 .config/omarchy/shell.json
 .config/omarchy/ussego.otoru.json
+.config/opencode/opencode.json
 .config/pulse/cookie
 .config/pulse/*-runtime
 .config/retroarch/
@@ -76,6 +77,8 @@ go/pkg/
 .local/share/nautilus*
 .local/share/nvim/
 .local/share/omazed/initialized
+.local/share/opencode/
+.local/share/opentui/
 .local/share/org.localsend.localsend_app/shared_preferences.json
 .local/share/pki/
 .local/share/pnpm/
@@ -97,6 +100,7 @@ go/pkg/
 .local/state/omarchy/notifications/
 .local/state/omarchy/powerprofiles/battery
 .local/state/omarchy/windows/about.fit
+.local/state/opencode/
 .local/state/pnpm/pnpm-state.json
 .local/state/syncthing/
 .local/state/wireplumber/

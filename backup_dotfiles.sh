@@ -11,6 +11,7 @@ backup_config .bashrc
 backup_config .config/btop/btop.conf
 backup_config .config/cliamp/config.toml
 backup_config .config/cliamp/playlists/radio-stations.toml
+backup_config .config/chromium/Default/Bookmarks
 backup_config .config/foot/foot.ini
 backup_config .config/gtk-3.0/bookmarks
 backup_config .config/hypr/hyprland-gui.lua

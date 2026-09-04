@@ -1,0 +1,80 @@
+{
+   "checksum": "5c1a45e1878ff8432157e9459c9894b5",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13432861537180745",
+            "date_last_used": "13433034254407414",
+            "guid": "23641af0-39a2-4920-b432-f4a82db997f4",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://app.notion.com/"
+         }, {
+            "date_added": "13432862460507561",
+            "date_last_used": "13433018268569121",
+            "guid": "9e642b91-c028-4376-ae2e-e6d117404eaa",
+            "id": "6",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://x.com/i/history"
+         }, {
+            "date_added": "13432882958956495",
+            "date_last_used": "13433034281907207",
+            "guid": "5593b2bf-13d7-4136-a763-6471754dc8f2",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://gemini.google.com/app"
+         }, {
+            "date_added": "13432916193516911",
+            "date_last_used": "13432964777669540",
+            "guid": "1b80459f-e2b1-426d-b495-15fd790dbcf2",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox"
+         } ],
+         "date_added": "13432850148791378",
+         "date_last_used": "0",
+         "date_modified": "13432916193516911",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13432850148791378",
+         "date_last_used": "0",
+         "date_modified": "13432861537180745",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13432850148791378",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

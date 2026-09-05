@@ -78,6 +78,7 @@ download_configs() {
 
 download_external_apps() {
     flatpak install flathub com.stremio.Stremio -y
+    curl -LsSf https://llama.app/install.sh | sh &
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash &
     curl -fsSL https://bun.sh/install | bash &
     curl -fsSL https://get.pnpm.io/install.sh | sh - &

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-install -D ~/.gitignore gitignore
+export LC_ALL=C
+sort ~/.gitignore > gitignore
 
 backup_config() {
     install -D ~/$1 $1
@@ -14,6 +15,7 @@ backup_config .config/cliamp/playlists/radio-stations.toml
 backup_config .config/chromium/Default/Bookmarks
 backup_config .config/foot/foot.ini
 backup_config .config/gtk-3.0/bookmarks
+backup_config .config/htop/htoprc
 backup_config .config/hypr/hyprland-gui.lua
 backup_config .config/hypr/hyprland.lua
 backup_config .config/hypr/input.lua

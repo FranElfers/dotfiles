@@ -55,6 +55,7 @@ download_configs() {
     download_config .config/chromium/Default/Bookmarks
     download_config .config/foot/foot.ini
     download_config .config/gtk-3.0/bookmarks
+    download_config .config/htop/htoprc
     download_config .config/hypr/hyprland-gui.lua
     download_config .config/hypr/hyprland.lua
     download_config .config/hypr/input.lua

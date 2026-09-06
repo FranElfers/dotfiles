@@ -68,6 +68,14 @@
 .config/zed/settings.json
 .config/zed/themes/omazed.json
 .gemini/antigravity-cli/
+.gemini/config/.migrated
+.gemini/extension_integrity.json
+.gemini/extensions/
+.gemini/history/fran/.project_root
+.gemini/installation_id
+.gemini/projects.json
+.gemini/tmp/fran/.project_root
+.gemini/trustedFolders.json
 .local/share/Antra/
 .local/share/Steam/
 .local/share/Trash/

@@ -132,6 +132,9 @@ echo -e "\n¡Instalación completada!"
 # github auth
 # gh auth login -p https -h github.com -w
 
+# download gpt oss model
+# curl -LO https://huggingface.co/ggml-org/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-MXFP4.gguf
+
 # swap fn & ctrl keys on macbook
 # echo "options hid_apple swap_fn_leftctrl=1" | sudo tee /etc/modprobe.d/hid_apple.conf
 # sudo mkinitcpio -P

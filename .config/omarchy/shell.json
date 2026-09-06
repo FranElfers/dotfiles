@@ -7,7 +7,7 @@
           "id": "omarchy.indicators"
         },
         {
-          "id": "omarchy.weather"
+          "id": "omarchy.system-update"
         },
         {
           "id": "omarchy.clock",
@@ -18,13 +18,13 @@
           "verticalFormat": "HH\n—\nmm"
         },
         {
-          "id": "omarchy.system-update"
-        },
-        {
           "id": "io.github.bscott.cliamp"
         }
       ],
       "left": [
+        {
+          "id": "omarchy.weather"
+        },
         {
           "id": "io.github.thetrueferret.decent-workspaces"
         }

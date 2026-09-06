@@ -34,7 +34,7 @@ function y() {
 }
 
 # pnpm
-export PNPM_HOME="/home/fran/.local/share/pnpm"
+export PNPM_HOME='/home/fran/.local/share/pnpm'
 case ":$PATH:" in
   *":$PNPM_HOME/bin:"*) ;;
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;

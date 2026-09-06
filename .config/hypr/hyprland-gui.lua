@@ -14,7 +14,7 @@ hl.config({
     general = {
         border_size = 2,
         col = {
-            inactive_border = "0x00ffffff",
+            inactive_border = "0x00000000",
         },
         gaps_in = 3,
         gaps_out = 5,
@@ -43,6 +43,6 @@ hl.monitor({
     disabled = false,
     mode = "2560x1440@120.00Hz",
     position = "0x0",
-    scale = 1.07,
+    scale = 1.25,
     cm = "srgb",
 })

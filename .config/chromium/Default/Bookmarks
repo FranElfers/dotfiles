@@ -1,5 +1,5 @@
 {
-   "checksum": "5c1a45e1878ff8432157e9459c9894b5",
+   "checksum": "200c28ce0357802cb2b60e1166528e95",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -15,7 +15,7 @@
             "url": "https://app.notion.com/"
          }, {
             "date_added": "13432862460507561",
-            "date_last_used": "13433104170857072",
+            "date_last_used": "13433223379724490",
             "guid": "9e642b91-c028-4376-ae2e-e6d117404eaa",
             "id": "6",
             "meta_info": {
@@ -37,7 +37,7 @@
             "url": "https://gemini.google.com/app"
          }, {
             "date_added": "13432916193516911",
-            "date_last_used": "13433104206831830",
+            "date_last_used": "13433232158172569",
             "guid": "1b80459f-e2b1-426d-b495-15fd790dbcf2",
             "id": "9",
             "meta_info": {
@@ -46,10 +46,32 @@
             "name": "",
             "type": "url",
             "url": "https://mail.google.com/mail/u/0/#inbox"
+         }, {
+            "date_added": "13433136435832497",
+            "date_last_used": "0",
+            "guid": "ffdf63e7-9ffa-4f3c-874b-df41e3141e0f",
+            "id": "11",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://github.com/franelfers"
+         }, {
+            "date_added": "13433229951100580",
+            "date_last_used": "0",
+            "guid": "e4ba2a86-4d71-45f4-a7e3-bdbcd7f06ce4",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Steam gratis",
+            "type": "url",
+            "url": "https://store.steampowered.com/search/?sort_by=_ASC&force_infinite=1&maxprice=free&category1=998&specials=1&page=1"
          } ],
          "date_added": "13432850148791378",
          "date_last_used": "0",
-         "date_modified": "13432916193516911",
+         "date_modified": "13433229951100580",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",

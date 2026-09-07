@@ -2,10 +2,12 @@
 *.log
 *.old
 *.sqlite*
+*Cache*
 *cache*.json
 *pycache*
 *voxtype*
 .XCompose
+.antigravity-ide/extensions/
 .assistant_history
 .bash_history
 .bash_logout
@@ -16,12 +18,40 @@
 .claude/themes/omarchy.json
 .codex/.tmp/
 .codex/tmp/
-.config/Antigravity IDE/*Cache*
+.config/Antigravity IDE/Backups/
+.config/Antigravity IDE/Crashpad/
+.config/Antigravity IDE/DIPS
+.config/Antigravity IDE/DIPS-wal
+.config/Antigravity IDE/Local Storage/
+.config/Antigravity IDE/Network Persistent State
+.config/Antigravity IDE/Session Storage/
+.config/Antigravity IDE/TransportSecurity
+.config/Antigravity IDE/User/globalStorage/
+.config/Antigravity IDE/User/globalStorage/state.vscdb
+.config/Antigravity IDE/User/workspaceStorage/
+.config/Antigravity IDE/User/workspaceStorage/
+.config/Antigravity IDE/code.lock
+.config/Antigravity/Crashpad/
+.config/Antigravity/DIPS
+.config/Antigravity/DIPS-wal
+.config/Antigravity/DevToolsActivePort
+.config/Antigravity/Dictionaries/
+.config/Antigravity/Local Storage/
+.config/Antigravity/Network Persistent State
+.config/Antigravity/Session Storage/
 .config/BraveSoftware/
+.config/FreeCAD/v1-1/system.cfg
+.config/FreeCAD/v1-1/user.cfg
 .config/GIMP/
 .config/GitHub Desktop/
 .config/Omacom/omacalc.conf
 .config/Omacom/omawrite.conf
+.config/atmos/channel
+.config/blender/5.2/config/bookmarks.txt
+.config/blender/5.2/config/recent-files.txt
+.config/blender/5.2/config/userpref.blend
+.config/blender/5.2/config/userpref.blend
+.config/blender/5.2/extensions/
 .config/btop/btop.conf
 .config/chromium/
 .config/cliamp/cliamp.sock*
@@ -68,6 +98,13 @@
 .config/zed/settings.json
 .config/zed/themes/omazed.json
 .gemini/antigravity-cli/
+.gemini/antigravity-ide/brain/
+.gemini/antigravity-ide/conversations/
+.gemini/antigravity-ide/implicit/
+.gemini/antigravity-ide/mcp/gemini-api-docs/
+.gemini/antigravity/agyhub_summaries_proto.pb
+.gemini/antigravity/annotations/
+.gemini/antigravity/conversations/
 .gemini/config/.migrated
 .gemini/extension_integrity.json
 .gemini/extensions/
@@ -76,9 +113,12 @@
 .gemini/projects.json
 .gemini/tmp/fran/.project_root
 .gemini/trustedFolders.json
+.local/bin/atmos
 .local/share/Antra/
+.local/share/FreeCAD/v1-1/SavedPreferencePacks/
 .local/share/Steam/
 .local/share/Trash/
+.local/share/atmos/
 .local/share/cliamp/album-art/
 .local/share/flatpak/
 .local/share/gvfs-metadata/home

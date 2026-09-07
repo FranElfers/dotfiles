@@ -34,6 +34,12 @@
           "id": "omarchy.tray"
         },
         {
+          "id": "gigasolo.omavoice",
+          "enabled": false,
+          "preset": "podcast",
+          "setDefaultSource": true
+        },
+        {
           "id": "org.omarchy.btrfs-raid-manager"
         },
         {

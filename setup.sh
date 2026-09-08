@@ -61,8 +61,9 @@ remove_ugly_themes() {
     sudo rm -rf /usr/share/omarchy/themes/matte-black
 }
 
+REPO_RAW_URL="https://raw.githubusercontent.com/FranElfers/dotfiles/master"
+
 download_configs() {
-    local REPO_RAW_URL="https://raw.githubusercontent.com/FranElfers/dotfiles/master"
 
     echo "Descargando .gitignore..."
     curl -fSL "$REPO_RAW_URL/gitignore" -o "$USER_HOME/.gitignore"
@@ -107,6 +108,24 @@ download_configs() {
     download_config .local/state/omarchy/powerprofiles/battery
     download_config .local/state/omarchy/workspace-layouts/1.lua
     download_config .nanorc
+}
+
+custom_login_theme() {
+    SDDM="/usr/share/sddm/themes/omarchy"
+    PLYMOUTH="/usr/share/plymouth/themes/omarchy"
+
+    curl -fsSL "$REPO_RAW_URL/loginscreen/Main.qml" | sudo tee "$SDDM/Main.qml" > /dev/null
+    curl -fsSL "$REPO_RAW_URL/loginscreen/omarchy.script" | sudo tee "$PLYMOUTH/omarchy.script" > /dev/null
+    curl -fsSL "$REPO_RAW_URL/loginscreen/entry.png" | sudo tee "$SDDM/entry.png" > /dev/null
+    curl -fsSL "$REPO_RAW_URL/loginscreen/logo.png" | sudo tee "$SDDM/logo.png" > /dev/null
+    curl -fsSL "$REPO_RAW_URL/loginscreen/wallpaper.png" | sudo tee "$SDDM/wallpaper.png" > /dev/null
+
+    sudo cp "$SDDM/entry.png" "$SDDM/logo.png" "$SDDM/wallpaper.png" "$PLYMOUTH/"
+    sudo chmod 644 "$SDDM/Main.qml" "$SDDM"/*.png "$PLYMOUTH/omarchy.script" "$PLYMOUTH"/*.png
+
+    sudo limine-mkinitcpio
+
+    echo "Tema aplicado correctamente."
 }
 
 download_external_apps() {
@@ -183,6 +202,7 @@ MODULE_ORDER=(
     "install_plugins"
     "download_configs"
     "download_external_apps"
+    "custom_login_theme"
     "delete_webapps"
     "remove_ugly_themes"
     "download_gpt_model"
@@ -200,6 +220,7 @@ declare -A MODULE_DESCS=(
     ["install_plugins"]="Instalar plugins de Omarchy"
     ["download_configs"]="Descargar dotfiles y configuraciones"
     ["download_external_apps"]="Instalar aplicaciones externas (Stremio / Llama / NVM / Bun / etc.)"
+    ["custom_login_theme"]="Instalar pantalla Login personalizada"
     ["delete_webapps"]="Eliminar Webapps (menos Discord, Maps y Whatsapp)"
     ["remove_ugly_themes"]="Eliminar themes feos (para ahorrar espacio)"
     ["setup_github_auth"]="[Extra] Iniciar sesión en GitHub CLI (gh auth login)"
@@ -217,6 +238,7 @@ declare -A MODULE_DEFAULTS=(
     ["install_plugins"]=1
     ["download_configs"]=1
     ["download_external_apps"]=1
+    ["custom_login_theme"]=1
     ["delete_webapps"]=1
     ["remove_ugly_themes"]=1
     ["setup_github_auth"]=0

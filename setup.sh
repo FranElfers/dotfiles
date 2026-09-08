@@ -51,6 +51,14 @@ install_plugins() {
     wait
 }
 
+remove_ugly_themes() {
+    sudo rm -rf /usr/share/omarchy/themes/lumon
+    sudo rm -rf /usr/share/omarchy/themes/retro-82
+    sudo rm -rf /usr/share/omarchy/themes/rose-pine
+    sudo rm -rf /usr/share/omarchy/themes/last-horizon
+    sudo rm -rf /usr/share/omarchy/themes/matte-black
+}
+
 download_configs() {
     local REPO_RAW_URL="https://raw.githubusercontent.com/FranElfers/dotfiles/master"
 
@@ -114,15 +122,11 @@ download_external_apps() {
 
 end() {
     sudo systemctl enable sshd
+    omarchy theme set Gruvbox
     omarchy restart shell
 }
 
 # Funciones opcionales / extras
-setup_vm_network() {
-    sudo ufw allow in on virbr0
-    sudo ufw route allow in on virbr0
-}
-
 setup_github_auth() {
     gh auth login -p https -h github.com -w
 }
@@ -137,6 +141,8 @@ virtualization() {
     sudo usermod -aG libvirt $USER
     sudo virsh net-start default
     sudo virsh net-autostart default
+    sudo ufw allow in on virbr0
+    sudo ufw route allow in on virbr0
 }
 
 delete_webapps() {
@@ -176,26 +182,24 @@ MODULE_ORDER=(
     "download_configs"
     "download_external_apps"
     "delete_webapps"
-    "end"
-    "setup_vm_network"
-    "setup_github_auth"
+    "remove_ugly_themes"
     "download_gpt_model"
     "remove_docker"
     "virtualization"
     "macbook_fixes"
+    "setup_github_auth"
 )
 
 # Descripciones legibles para el menú y logs
 declare -A MODULE_DESCS=(
     ["update_omarchy"]="Actualizar Omarchy y paquetes del sistema"
-    ["install_packages_pacman"]="Instalar paquetes oficiales con Pacman (nano, yazi, zed, bun, etc.)"
-    ["install_packages_aur"]="Instalar paquetes desde AUR con yay (hyprmod, omazed, etc.)"
-    ["install_plugins"]="Instalar y habilitar plugins de Omarchy"
-    ["download_configs"]="Descargar dotfiles y configuraciones (~/.config, etc.)"
-    ["download_external_apps"]="Instalar aplicaciones externas (Stremio, Llama, NVM, Bun, etc.)"
-    ["delete_webapps"]="Eliminar Webapps"
-    ["end"]="Finalizar configuración (Habilitar SSHD y reiniciar shell)"
-    ["setup_vm_network"]="[Extra] Permitir tráfico virbr0 en UFW para máquinas virtuales"
+    ["install_packages_pacman"]="Instalar paquetes Pacman"
+    ["install_packages_aur"]="Instalar paquetes AUR"
+    ["install_plugins"]="Instalar plugins de Omarchy"
+    ["download_configs"]="Descargar dotfiles y configuraciones"
+    ["download_external_apps"]="Instalar aplicaciones externas (Stremio / Llama / NVM / Bun / etc.)"
+    ["delete_webapps"]="Eliminar Webapps (menos Discord, Maps y Whatsapp)"
+    ["remove_ugly_themes"]="Eliminar themes feos (para ahorrar espacio)"
     ["setup_github_auth"]="[Extra] Iniciar sesión en GitHub CLI (gh auth login)"
     ["download_gpt_model"]="[Extra] Descargar pesos de modelo GPT OSS GGUF"
     ["remove_docker"]="[Extra] Eliminar Docker"
@@ -211,12 +215,11 @@ declare -A MODULE_DEFAULTS=(
     ["install_plugins"]=1
     ["download_configs"]=1
     ["download_external_apps"]=1
-    ["delete_webapps"]=0
-    ["end"]=1
-    ["setup_vm_network"]=0
+    ["delete_webapps"]=1
+    ["remove_ugly_themes"]=1
     ["setup_github_auth"]=0
     ["download_gpt_model"]=0
-    ["remove_docker"]=0
+    ["remove_docker"]=1
     ["virtualization"]=0
     ["macbook_fixes"]=0
 )
@@ -394,7 +397,7 @@ EJEMPLOS:
     ./setup.sh                                          # Menú interactivo TUI
     ./setup.sh --only download_configs                  # Descarga solo dotfiles
     ./setup.sh --only update_omarchy,download_configs   # Solo update y configs
-    ./setup.sh --skip install_packages_aur,end          # Estándar sin AUR ni reinicio
+    ./setup.sh --skip install_packages_aur              # Estándar sin paquetes AUR
     ./setup.sh --all --yes                              # Instalación estándar desatendida
     ./setup.sh --dry-run --only download_configs        # Simula la ejecución
 
@@ -582,6 +585,7 @@ if [ "$DRY_RUN" = true ]; then
     for mod in "${FINAL_MODULES[@]}"; do
         echo "  [DRY-RUN] Se ejecutaría: $mod"
     done
+    echo "  [DRY-RUN] Se ejecutaría: end (Finalizar configuración)"
     exit 0
 fi
 
@@ -613,6 +617,19 @@ for mod in "${FINAL_MODULES[@]}"; do
 
     ((idx++))
 done
+
+# Ejecutar siempre la finalización del sistema
+echo ""
+if command -v gum &>/dev/null; then
+    gum style \
+        --foreground 212 --border-foreground 99 --border rounded \
+        --align center --width 70 --margin "0 0" --bold \
+        "Finalizando configuración del sistema"
+else
+    echo -e "\033[1;35m<===================[ Finalizando configuración del sistema ]===================>\033[0m"
+fi
+echo ""
+end
 
 # Mensaje final de éxito
 echo ""

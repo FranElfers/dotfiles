@@ -70,9 +70,22 @@ hl.config({
     },
 })
 
+hl.curve("fran", { type = "bezier", points = { { 0.25, 1 }, { 0, 1 } } })
+hl.curve("easeOutExpo", { type = "bezier", points = { { 0.16, 1 }, { 0.3, 1 } } })
+hl.curve("easeInOutCirc", { type = "bezier", points = { { 0.85, 0 }, { 0.15, 1 } } })
+hl.curve("overshoot", { type = "bezier", points = { {0.5, 0.9}, {0.1, 1.1} } } )
+hl.curve("rubber", { type = "spring", mass = 1, stiffness = 50, dampening = 15 })
+
+hl.animation({
+    leaf = "fade",
+    enabled = true,
+    speed = 3,
+    bezier = "fran",
+})
+
 hl.animation({
     leaf = "workspaces",
     enabled = true,
-    speed = 1.0,
-    bezier = "default",
+    speed = 8,
+    bezier = "fran",
 })

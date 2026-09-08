@@ -67,6 +67,7 @@
 .config/cliamp/resume.json
 .config/cliamp/spotify_credentials.json
 .config/dconf/user
+.config/fastfetch/config.jsonc
 .config/fcitx*/
 .config/foot/foot.ini
 .config/gh/config.yml

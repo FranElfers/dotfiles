@@ -71,6 +71,7 @@ download_configs() {
     download_config .config/cliamp/config.toml
     download_config .config/cliamp/playlists/radio-stations.toml
     download_config .config/chromium/Default/Bookmarks
+    download_config .config/fastfetch/config.jsonc
     download_config .config/foot/foot.ini
     download_config .config/gtk-3.0/bookmarks
     download_config .config/htop/htoprc

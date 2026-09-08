@@ -16,6 +16,7 @@ backup_config .config/chromium/Default/Bookmarks
 backup_config .config/foot/foot.ini
 backup_config .config/gtk-3.0/bookmarks
 backup_config .config/htop/htoprc
+backup_config .config/hypr/.luarc.json
 backup_config .config/hypr/bindings.lua
 backup_config .config/hypr/hyprland.lua
 backup_config .config/hypr/input.lua

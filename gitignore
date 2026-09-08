@@ -75,10 +75,12 @@
 .config/go/
 .config/google-chrome*/
 .config/gtk-3.0/bookmarks
+.config/hypr/.luarc.json
 .config/hypr/bindings.lua
 .config/hypr/hyprland-gui.lua
 .config/hypr/hyprland.lua
 .config/hypr/input.lua
+.config/hypr/looknfeel.lua
 .config/hypr/looknfeel.lua
 .config/hypr/monitors.lua
 .config/ibus/

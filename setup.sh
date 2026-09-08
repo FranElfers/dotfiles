@@ -30,6 +30,7 @@ update_omarchy() {
 
 install_packages_pacman() {
     omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv syncthing flatpak gimp
+    omarchy pkg drop obsidian herdr lazygit libreoffice-fresh
 }
 
 install_packages_aur() {
@@ -126,6 +127,32 @@ download_gpt_model() {
     curl -LO https://huggingface.co/ggml-org/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-MXFP4.gguf
 }
 
+virtualization() {
+    omarchy pkg add qemu-desktop virt-manager dnsmasq iptables-nft edk2-ovmf
+    sudo systemctl enable --now libvirtd
+    sudo usermod -aG libvirt $USER
+    sudo virsh net-start default
+    sudo virsh net-autostart default
+}
+
+delete_webapps() {
+    # deja Discord, Google Maps y Whatsapp
+    omarchy webapp remove Basecamp
+    omarchy webapp remove Zoom
+    omarchy webapp remove Google Contacts
+    omarchy webapp remove Google Messages
+    omarchy webapp remove Google Photos
+    omarchy webapp remove HEY
+    omarchy webapp remove Zoom
+    omarchy webapp remove YouTube
+    omarchy webapp remove X
+}
+
+remove_docker() {
+    omarchy pkg drop docker docker-compose docker-buildx ufw-docker lazydocker
+    omarchy tui remove Docker
+}
+
 macbook_fixes() {
     echo "options hid_apple swap_fn_leftctrl=1" | sudo tee /etc/modprobe.d/hid_apple.conf
     sudo mkinitcpio -P
@@ -144,10 +171,13 @@ MODULE_ORDER=(
     "install_plugins"
     "download_configs"
     "download_external_apps"
+    "delete_webapps"
     "end"
     "setup_vm_network"
     "setup_github_auth"
     "download_gpt_model"
+    "remove_docker"
+    "virtualization"
     "macbook_fixes"
 )
 
@@ -159,25 +189,31 @@ declare -A MODULE_DESCS=(
     ["install_plugins"]="Instalar y habilitar plugins de Omarchy"
     ["download_configs"]="Descargar dotfiles y configuraciones (~/.config, etc.)"
     ["download_external_apps"]="Instalar aplicaciones externas (Stremio, Llama, NVM, Bun, etc.)"
+    ["delete_webapps"]="Eliminar Webapps"
     ["end"]="Finalizar configuración (Habilitar SSHD y reiniciar shell)"
     ["setup_vm_network"]="[Extra] Permitir tráfico virbr0 en UFW para máquinas virtuales"
     ["setup_github_auth"]="[Extra] Iniciar sesión en GitHub CLI (gh auth login)"
     ["download_gpt_model"]="[Extra] Descargar pesos de modelo GPT OSS GGUF"
+    ["remove_docker"]="[Extra] Eliminar Docker"
+    ["virtualization"]="[Extra] Descargar paquetes de virtualizacion"
     ["macbook_fixes"]="[Extra] MacBook: Correcciones"
 )
 
 # Estado por defecto en el selector interactivo (1 = marcado, 0 = desmarcado)
 declare -A MODULE_DEFAULTS=(
-    ["update_omarchy"]=1
+    ["update_omarchy"]=0
     ["install_packages_pacman"]=1
     ["install_packages_aur"]=1
     ["install_plugins"]=1
     ["download_configs"]=1
     ["download_external_apps"]=1
+    ["delete_webapps"]=0
     ["end"]=1
     ["setup_vm_network"]=0
     ["setup_github_auth"]=0
     ["download_gpt_model"]=0
+    ["remove_docker"]=0
+    ["virtualization"]=0
     ["macbook_fixes"]=0
 )
 

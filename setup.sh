@@ -95,6 +95,7 @@ download_configs() {
     download_config .local/bin/quickshell
     download_config .local/state/omarchy/powerprofiles/battery
     download_config .local/state/omarchy/workspace-layouts/1.lua
+    download_config .nanorc
 }
 
 download_external_apps() {

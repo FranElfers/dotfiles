@@ -37,3 +37,4 @@ backup_config .gemini/antigravity-cli/settings.json
 backup_config .local/bin/quickshell
 backup_config .local/state/omarchy/powerprofiles/battery
 backup_config .local/state/omarchy/workspace-layouts/1.lua
+backup_config .nanorc

@@ -171,6 +171,7 @@
 .local/state/wireplumber/
 .local/state/yazi/.dds
 .minecraft
+.nanorc
 .node_repl_history
 .npm/
 .omp/

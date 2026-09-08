@@ -1,6 +1,6 @@
 {
   "allowNonWorkspaceAccess": true,
-  "model": "Gemini 3.8 Flash (Medium)",
+  "model": "Gemini 3.8 Flash (High)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -75,6 +75,7 @@
     "/home/fran/repos/franelfers/omarchy-btrfs-raid-manager",
     "/home/fran/Projects/liquid-sim",
     "/home/fran/Projects/assistant",
-    "/home/fran/Projects/markdown-render"
+    "/home/fran/Projects/markdown-render",
+    "/home/fran/repos/franelfers/dotfiles"
   ]
 }

@@ -3,7 +3,7 @@
 *.old
 *.sqlite*
 *Cache*
-*cache*.json
+*cache*
 *pycache*
 *voxtype*
 .XCompose
@@ -39,6 +39,11 @@
 .config/Antigravity/Local Storage/
 .config/Antigravity/Network Persistent State
 .config/Antigravity/Session Storage/
+.config/Antigravity/SharedStorage-wal
+.config/Antigravity/SingletonCookie
+.config/Antigravity/SingletonLock
+.config/Antigravity/SingletonSocket
+.config/Antigravity/app_storage.json
 .config/BraveSoftware/
 .config/FreeCAD/v1-1/system.cfg
 .config/FreeCAD/v1-1/user.cfg
@@ -106,6 +111,7 @@
 .gemini/antigravity/annotations/
 .gemini/antigravity/conversations/
 .gemini/config/.migrated
+.gemini/config/projects/
 .gemini/extension_integrity.json
 .gemini/extensions/
 .gemini/history/fran/.project_root
@@ -141,6 +147,7 @@
 .local/state/**/clipboard*
 .local/state/gh/device-id
 .local/state/herdr/
+.local/state/lesshst
 .local/state/mise/
 .local/state/nvim/
 .local/state/okomart/
@@ -153,6 +160,7 @@
 .local/state/omarchy/windows/about.fit
 .local/state/opencode/
 .local/state/pnpm/pnpm-state.json
+.local/state/skills/.skill-lock.json
 .local/state/syncthing/
 .local/state/wireplumber/
 .local/state/yazi/.dds
@@ -168,6 +176,7 @@
 .steampath
 .steampid
 .var/app/com.stremio.Stremio/
+.var/app/org.gimp.GIMP/data/
 Documents/
 Downloads/
 Games/

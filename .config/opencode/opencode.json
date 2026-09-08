@@ -11,6 +11,9 @@
       "models": {
         "ggml-org/gemma-4-12B-it-GGUF:Q8_0": {
           "name": "ggml-org/gemma-4-12B-it-GGUF:Q8_0"
+        },
+        "ggml-org/gpt-oss-20b-GGUF:mxfp4": {
+          "name": "ggml-org/gpt-oss-20b-GGUF"
         }
       }
     }

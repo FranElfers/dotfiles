@@ -72,6 +72,47 @@
     },
   },
   "lsp": {
+    "lua-language-server": {
+      "binary": {
+        "env": {
+          "LLS_FORCE_ACCEPT_WORKSPACE": "true",
+          "LLS_CONFIG_PATH": "/home/fran/.config/hypr/.luarc.json"
+        }
+      },
+      "settings": {
+        "Lua": {
+          "diagnostics": {
+            "globals": ["hl", "o"]
+          },
+          "workspace": {
+            "library": [
+              "/usr/share/hypr/stubs",
+              "/usr/share/omarchy/default/hypr"
+            ],
+            "checkThirdParty": false,
+            "ignoreDir": [
+              ".cache",
+              ".local",
+              ".cargo",
+              ".rustup",
+              ".gemini",
+              ".npm",
+              "node_modules"
+            ]
+          }
+        },
+        "diagnostics": {
+          "globals": ["hl", "o"]
+        },
+        "workspace": {
+          "library": [
+            "/usr/share/hypr/stubs",
+            "/usr/share/omarchy/default/hypr"
+          ],
+          "checkThirdParty": false
+        }
+      }
+    },
     "qmljs": {
       "initialization_options": {
         "format": false,

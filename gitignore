@@ -1,3 +1,4 @@
+*.bak*
 *.db
 *.log
 *.old
@@ -97,6 +98,7 @@
 .config/pulse/cookie
 .config/retroarch/
 .config/spotify/
+.config/starship.toml
 .config/systemd/user/default.target.wants/syncthing.service
 .config/unity3d/LandCrab/PEAK/steam_autocloud.vdf
 .config/wayvibes/input_device_path
@@ -191,5 +193,7 @@ Work/
 Zomboid/
 db.*
 go/pkg/
+llms/
 logs*
 steam.desktop
+vm*

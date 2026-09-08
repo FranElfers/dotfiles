@@ -75,7 +75,6 @@ download_configs() {
     download_config .config/gtk-3.0/bookmarks
     download_config .config/htop/htoprc
     download_config .config/hypr/bindings.lua
-    download_config .config/hypr/hyprland-gui.lua
     download_config .config/hypr/hyprland.lua
     download_config .config/hypr/input.lua
     download_config .config/hypr/looknfeel.lua
@@ -87,6 +86,7 @@ download_configs() {
     download_config .config/omarchy/shell.json
     download_config .config/omarchy/ussego.otoru.json
     download_config .config/opencode/opencode.json
+    download_config .config/starship.toml
     download_config .config/yazi/yazi.toml
     download_config .config/zed/keymap.json
     download_config .config/zed/settings.json

@@ -48,6 +48,8 @@ install_plugins() {
     omarchy plugin add https://github.com/ssupt/omarchy-bluetooth-audio.git --enable -y &
     omarchy plugin add https://github.com/edgarsilva/omarchy-hw-monitor.git --enable -y &
     omarchy plugin add https://github.com/ssupt/omarchy-audio-control.git --enable -y &
+    omarchy plugin add https://github.com/gigasolo/omavoice.git --enable -y &
+    omarchy plugin add https://github.com/marconn01/live-f1.git --enable -y &
     wait
 }
 

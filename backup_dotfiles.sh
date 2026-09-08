@@ -20,6 +20,7 @@ backup_config .config/hypr/bindings.lua
 backup_config .config/hypr/hyprland-gui.lua
 backup_config .config/hypr/hyprland.lua
 backup_config .config/hypr/input.lua
+backup_config .config/hypr/looknfeel.lua
 backup_config .config/hypr/monitors.lua
 backup_config .config/omarchy/audio-preferences.json
 backup_config .config/omarchy/audio-rules.json

@@ -34,7 +34,7 @@ install_packages_pacman() {
 }
 
 install_packages_aur() {
-    yay -S hyprmod github-desktop-bin omazed --noconfirm
+    yay -S github-desktop-bin omazed --noconfirm
     omazed setup
 }
 
@@ -78,6 +78,7 @@ download_configs() {
     download_config .config/hypr/hyprland-gui.lua
     download_config .config/hypr/hyprland.lua
     download_config .config/hypr/input.lua
+    download_config .config/hypr/looknfeel.lua
     download_config .config/hypr/monitors.lua
     download_config .config/omarchy/audio-preferences.json
     download_config .config/omarchy/audio-rules.json

@@ -1,6 +1,6 @@
 {
   "allowNonWorkspaceAccess": true,
-  "model": "Gemini 3.8 Flash (Low)",
+  "model": "Gemini 3.8 Flash (Medium)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -76,6 +76,8 @@
     "/home/fran/Projects/liquid-sim",
     "/home/fran/Projects/assistant",
     "/home/fran/Projects/markdown-render",
-    "/home/fran/repos/franelfers/dotfiles"
+    "/home/fran/repos/franelfers/dotfiles",
+    "/home/fran/repos/franelfers/kick-widgets",
+    "/home/fran/repos/franelfers/professional-api"
   ]
 }

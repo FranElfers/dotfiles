@@ -1,56 +1,9 @@
 {
   "bar": {
-    "centerAnchor": "omarchy.clock",
+    "centerAnchor": "io.github.thetrueferret.decent-workspaces",
     "layout": {
-      "center": [
-        {
-          "id": "omarchy.indicators"
-        },
-        {
-          "id": "omarchy.system-update"
-        },
-        {
-          "id": "omarchy.clock",
-          "birthYear": 2001,
-          "format": "yyyy-MM-dd HH:mm",
-          "formatAlt": "d MMMM 'W'ww yyyy",
-          "lifeExpectancy": 90,
-          "verticalFormat": "HH\n—\nmm"
-        },
-        {
-          "id": "io.github.bscott.cliamp"
-        }
-      ],
+      "center": [{ "id": "io.github.thetrueferret.decent-workspaces" }],
       "left": [
-        {
-          "id": "omarchy.weather"
-        },
-        {
-          "id": "io.github.thetrueferret.decent-workspaces"
-        }
-      ],
-      "right": [
-        {
-          "id": "omarchy.tray"
-        },
-        {
-          "id": "gigasolo.omavoice",
-          "enabled": false,
-          "preset": "podcast",
-          "setDefaultSource": true
-        },
-        {
-          "id": "org.omarchy.btrfs-raid-manager"
-        },
-        {
-          "id": "nocram.f1"
-        },
-        {
-          "id": "ussego.otoru"
-        },
-        {
-          "id": "iamkxyz.todo"
-        },
         {
           "id": "io.github.edgarsilva.hw-monitor",
           "mode": "full",
@@ -59,6 +12,41 @@
           "showClocks": false,
           "ramFormat": "used",
           "padOpacity": 0
+        },
+        {
+          "id": "omarchy.weather"
+        },
+        {
+          "id": "omarchy-philips-hue"
+        },
+        {
+          "id": "io.github.bscott.cliamp"
+        }
+      ],
+      "right": [
+        {
+          "id": "omarchy.system-update"
+        },
+        {
+          "id": "omarchy.indicators"
+        },
+        {
+          "id": "omarchy.tray"
+        },
+        {
+          "id": "gigasolo.omavoice",
+          "enabled": true,
+          "preset": "podcast",
+          "setDefaultSource": true
+        },
+        {
+          "id": "org.omarchy.btrfs-raid-manager"
+        },
+        {
+          "id": "ussego.otoru"
+        },
+        {
+          "id": "iamkxyz.todo"
         },
         {
           "id": "benekuehn.macbook-fans"
@@ -84,10 +72,18 @@
         {
           "id": "omarchy.power",
           "showPercentage": true
+        },
+        {
+          "id": "omarchy.clock",
+          "birthYear": 2001,
+          "format": "yyyy-MM-dd HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
+          "lifeExpectancy": 90,
+          "verticalFormat": "HH\n—\nmm"
         }
       ]
     },
-    "position": "top",
+    "position": "bottom",
     "transparent": true
   },
   "idle": {

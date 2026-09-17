@@ -30,3 +30,8 @@
 
 -- open zed
 o.bind("SUPER + F1", "Zed", "zeditor")
+
+-- Rebind PRINT to copy screenshot to clipboard without saving to disk
+hl.unbind("PRINT")
+o.bind("PRINT", "Screenshot to clipboard", "omarchy capture screenshot smart copy")
+

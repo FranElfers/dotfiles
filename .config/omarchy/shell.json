@@ -2,7 +2,11 @@
   "bar": {
     "centerAnchor": "io.github.thetrueferret.decent-workspaces",
     "layout": {
-      "center": [{ "id": "io.github.thetrueferret.decent-workspaces" }],
+      "center": [
+        {
+          "id": "io.github.thetrueferret.decent-workspaces"
+        }
+      ],
       "left": [
         {
           "id": "io.github.edgarsilva.hw-monitor",
@@ -25,13 +29,13 @@
       ],
       "right": [
         {
-          "id": "omarchy.system-update"
-        },
-        {
           "id": "omarchy.indicators"
         },
         {
           "id": "omarchy.tray"
+        },
+        {
+          "id": "omarchy.system-update"
         },
         {
           "id": "gigasolo.omavoice",
@@ -104,6 +108,10 @@
     }
   ],
   "version": 1,
-  "disabledPlugins": ["omarchy.lock"],
-  "cloneSourceRestores": ["io.github.sirjul1337.lock-explorer"]
+  "disabledPlugins": [
+    "omarchy.lock"
+  ],
+  "cloneSourceRestores": [
+    "io.github.sirjul1337.lock-explorer"
+  ]
 }

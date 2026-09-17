@@ -4,7 +4,7 @@
   "autoExtractClipboard": true,
   "clearInputAfterDownload": true,
   "audioFormat": "best",
-  "advancedVisible": true,
+  "advancedVisible": false,
   "outputTemplate": "%(title)s.%(ext)s",
   "cookies": "",
   "cookiesFromBrowser": "",
@@ -26,7 +26,7 @@
     "interaction"
   ],
   "useArchive": false,
-  "saveHistory": true,
+  "saveHistory": false,
   "history": [],
   "subLanguage": "all",
   "postDownloadAction": "nothing"

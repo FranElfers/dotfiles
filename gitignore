@@ -1,10 +1,12 @@
 *.bak*
 *.db
+*.localstorage*
 *.log
 *.old
 *.sqlite*
 *Cache*
 *cache*
+*cookie
 *pycache*
 *voxtype*
 .XCompose
@@ -111,6 +113,7 @@
 .config/zed/keymap.json
 .config/zed/settings.json
 .config/zed/themes/omazed.json
+.gemini/**/.project_root
 .gemini/antigravity-cli/
 .gemini/antigravity-ide/brain/
 .gemini/antigravity-ide/conversations/
@@ -134,6 +137,8 @@
 .local/share/FreeCAD/v1-1/SavedPreferencePacks/
 .local/share/Steam/
 .local/share/Trash/
+.local/share/aether/mediakeys/v1/salt
+.local/share/aether/storage/salt
 .local/share/atmos/
 .local/share/cliamp/album-art/
 .local/share/flatpak/
@@ -157,6 +162,7 @@
 .local/state/**/clipboard*
 .local/state/gh/device-id
 .local/state/herdr/
+.local/state/kdenlivestaterc
 .local/state/lesshst
 .local/state/mise/
 .local/state/nvim/

@@ -1,21 +1,52 @@
 {
-   "checksum": "200c28ce0357802cb2b60e1166528e95",
+   "checksum": "185fd81335fbb97b3663f3299ed95783",
    "roots": {
       "bookmark_bar": {
          "children": [ {
-            "date_added": "13432861537180745",
-            "date_last_used": "13433541036779810",
-            "guid": "23641af0-39a2-4920-b432-f4a82db997f4",
-            "id": "5",
-            "meta_info": {
-               "power_bookmark_meta": ""
-            },
-            "name": "",
-            "type": "url",
-            "url": "https://app.notion.com/"
+            "children": [ {
+               "date_added": "13432861537180745",
+               "date_last_used": "13433966959294525",
+               "guid": "23641af0-39a2-4920-b432-f4a82db997f4",
+               "id": "5",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "",
+               "type": "url",
+               "url": "https://app.notion.com/"
+            }, {
+               "date_added": "13434006025121498",
+               "date_last_used": "13434006430857388",
+               "guid": "d6b0b167-1a6b-4694-86c3-0ae1c42705c8",
+               "id": "15",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Informática",
+               "type": "url",
+               "url": "https://app.notion.com/p/franciscoelfers/Inform-tica-30d9ebc5cca14b259a48cbd50e59193e"
+            }, {
+               "date_added": "13434006105826185",
+               "date_last_used": "13434042839165126",
+               "guid": "8ed6c5d6-30bf-4bea-b31f-3f0ae1fab042",
+               "id": "16",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "IA",
+               "type": "url",
+               "url": "https://app.notion.com/p/franciscoelfers/IA-3adf5c231fd480858abffd7d9140b92c"
+            } ],
+            "date_added": "13434006148543807",
+            "date_last_used": "0",
+            "date_modified": "13434006155388218",
+            "guid": "c0935f98-d069-4204-a7c5-aa6803e37378",
+            "id": "17",
+            "name": "Notion",
+            "type": "folder"
          }, {
             "date_added": "13432862460507561",
-            "date_last_used": "13433539392284667",
+            "date_last_used": "13434006421654611",
             "guid": "9e642b91-c028-4376-ae2e-e6d117404eaa",
             "id": "6",
             "meta_info": {
@@ -26,7 +57,7 @@
             "url": "https://x.com/i/history"
          }, {
             "date_added": "13432882958956495",
-            "date_last_used": "13433574642099702",
+            "date_last_used": "13434045985928320",
             "guid": "5593b2bf-13d7-4136-a763-6471754dc8f2",
             "id": "7",
             "meta_info": {
@@ -37,7 +68,7 @@
             "url": "https://gemini.google.com/app"
          }, {
             "date_added": "13432916193516911",
-            "date_last_used": "13433554835521267",
+            "date_last_used": "13434063675109697",
             "guid": "1b80459f-e2b1-426d-b495-15fd790dbcf2",
             "id": "9",
             "meta_info": {
@@ -48,7 +79,7 @@
             "url": "https://mail.google.com/mail/u/0/#inbox"
          }, {
             "date_added": "13433136435832497",
-            "date_last_used": "13433477496441154",
+            "date_last_used": "13434094120002266",
             "guid": "ffdf63e7-9ffa-4f3c-874b-df41e3141e0f",
             "id": "11",
             "meta_info": {
@@ -59,7 +90,7 @@
             "url": "https://github.com/franelfers"
          }, {
             "date_added": "13433229951100580",
-            "date_last_used": "13433539388079343",
+            "date_last_used": "13433995368892218",
             "guid": "e4ba2a86-4d71-45f4-a7e3-bdbcd7f06ce4",
             "id": "13",
             "meta_info": {
@@ -71,7 +102,7 @@
          } ],
          "date_added": "13432850148791378",
          "date_last_used": "0",
-         "date_modified": "13433229951100580",
+         "date_modified": "13434006363373131",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",

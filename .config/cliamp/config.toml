@@ -9,3 +9,6 @@ shuffle = false
 [spotify]
 client_id = "d13b36de5bef434aba487663ae7e1f9d"
 bitrate   = 320
+
+[radio]
+country = "AR"

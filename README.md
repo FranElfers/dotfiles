@@ -1,10 +1,10 @@
-# Dotfiles & Configuración del Sistema (Omarchy / Arch Linux)
+# Dotfiles Omarchy
 
-Repositorio de dotfiles y scripts de automatización para Omarchy / Arch Linux con Hyprland.
+Dotfiles y scripts de instalación para Omarchy (Arch Linux + Hyprland).
 
 ## Dependencias
 
-**Todos** los paquetes preinstalados por **Omarchy**.
+[Omarchy](https://omarchy.org/) recién instalado con **todos** sus paquetes.
 
 ## Instalación
 

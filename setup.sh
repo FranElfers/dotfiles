@@ -34,7 +34,7 @@ install_packages_pacman() {
 }
 
 install_packages_aur() {
-    yay -S github-desktop-bin omazed --noconfirm
+    yay -S github-desktop-bin omazed spotifast-bin --noconfirm
     omazed setup
 }
 

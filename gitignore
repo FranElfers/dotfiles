@@ -18,6 +18,8 @@
 .bashrc
 .bun_repl_history
 .cache/
+.cargo/git/
+.cargo/registry/
 .claude/themes/omarchy.json
 .codex/.tmp/
 .codex/tmp/
@@ -141,6 +143,7 @@
 .local/share/aether/storage/salt
 .local/share/atmos/
 .local/share/cliamp/album-art/
+.local/share/fastpotify/
 .local/share/flatpak/
 .local/share/gvfs-metadata/home
 .local/share/gvfs-metadata/root
@@ -154,12 +157,14 @@
 .local/share/opencode/
 .local/share/opentui/
 .local/share/org.localsend.localsend_app/shared_preferences.json
+.local/share/pipx/
 .local/share/pki/
 .local/share/pnpm/
 .local/share/recently-used.xbel
 .local/share/vulkan/implicit_layer.d/
 .local/share/zed/
 .local/state/**/clipboard*
+.local/state/fastpotify/
 .local/state/gh/device-id
 .local/state/herdr/
 .local/state/kdenlivestaterc
@@ -199,6 +204,7 @@
 .var/app/com.obsproject.Studio/config/obs-studio/profiler_data/
 .var/app/com.stremio.Stremio/
 .var/app/org.gimp.GIMP/data/
+.var/app/org.nickvision.cavalier/config/Nickvision Cavalier/config.json
 Documents/
 Downloads/
 Games/

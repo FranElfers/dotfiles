@@ -1,5 +1,7 @@
+*.backup*
 *.bak*
 *.db
+*.ldb
 *.localstorage*
 *.log
 *.old
@@ -20,6 +22,7 @@
 .cache/
 .cargo/git/
 .cargo/registry/
+.claude/projects/
 .claude/themes/omarchy.json
 .codex/.tmp/
 .codex/tmp/
@@ -51,6 +54,12 @@
 .config/Antigravity/SingletonSocket
 .config/Antigravity/app_storage.json
 .config/BraveSoftware/
+.config/Claude/IndexedDB/https_claude.ai_0.indexeddb.leveldb/
+.config/Claude/Local Storage/leveldb/
+.config/Claude/Session Storage/
+.config/Claude/claude-code-sessions/
+.config/Claude/local-agent-mode-sessions/
+.config/Claude/shared_proto_db/
 .config/FreeCAD/v1-1/system.cfg
 .config/FreeCAD/v1-1/user.cfg
 .config/GIMP/
@@ -106,6 +115,7 @@
 .config/pulse/*-runtime
 .config/pulse/cookie
 .config/retroarch/
+.config/spotifast/milkdrop/
 .config/spotify/
 .config/starship.toml
 .config/systemd/user/default.target.wants/syncthing.service

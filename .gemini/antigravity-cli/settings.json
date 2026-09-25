@@ -1,6 +1,6 @@
 {
   "allowNonWorkspaceAccess": true,
-  "model": "Gemini 3.8 Flash (Medium)",
+  "model": "Gemini 3.8 Flash (High)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -79,6 +79,8 @@
     "/home/fran/repos/franelfers/dotfiles",
     "/home/fran/repos/franelfers/kick-widgets",
     "/home/fran/repos/franelfers/professional-api",
-    "/home/fran/Projects/x-scrapper"
+    "/home/fran/Projects/x-scrapper",
+    "/home/fran/Projects/jev",
+    "/home/fran/Projects/omarchy-snapdragon"
   ]
 }

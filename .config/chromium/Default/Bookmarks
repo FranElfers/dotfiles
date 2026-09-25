@@ -1,22 +1,22 @@
 {
-   "checksum": "185fd81335fbb97b3663f3299ed95783",
+   "checksum": "211cd8e8be771f50d57c0c231f036860",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "children": [ {
-               "date_added": "13432861537180745",
-               "date_last_used": "13433966959294525",
-               "guid": "23641af0-39a2-4920-b432-f4a82db997f4",
-               "id": "5",
+               "date_added": "13434589311175508",
+               "date_last_used": "13434589325452524",
+               "guid": "eb1d02ae-f16f-4081-9e80-3bdca52d1225",
+               "id": "27",
                "meta_info": {
                   "power_bookmark_meta": ""
                },
-               "name": "",
+               "name": "Start",
                "type": "url",
-               "url": "https://app.notion.com/"
+               "url": "https://app.notion.com/p/franciscoelfers/Start-b840beaf0a9e47da8c50e10d41218a2a"
             }, {
                "date_added": "13434006025121498",
-               "date_last_used": "13434006430857388",
+               "date_last_used": "13434589296285965",
                "guid": "d6b0b167-1a6b-4694-86c3-0ae1c42705c8",
                "id": "15",
                "meta_info": {
@@ -39,14 +39,14 @@
             } ],
             "date_added": "13434006148543807",
             "date_last_used": "0",
-            "date_modified": "13434006155388218",
+            "date_modified": "13434589321733235",
             "guid": "c0935f98-d069-4204-a7c5-aa6803e37378",
             "id": "17",
             "name": "Notion",
             "type": "folder"
          }, {
             "date_added": "13432862460507561",
-            "date_last_used": "13434264096500504",
+            "date_last_used": "13434770274542976",
             "guid": "9e642b91-c028-4376-ae2e-e6d117404eaa",
             "id": "6",
             "meta_info": {
@@ -57,7 +57,7 @@
             "url": "https://x.com/i/history"
          }, {
             "date_added": "13432882958956495",
-            "date_last_used": "13434045985928320",
+            "date_last_used": "13434593613159206",
             "guid": "5593b2bf-13d7-4136-a763-6471754dc8f2",
             "id": "7",
             "meta_info": {
@@ -68,7 +68,7 @@
             "url": "https://gemini.google.com/app"
          }, {
             "date_added": "13432916193516911",
-            "date_last_used": "13434063675109697",
+            "date_last_used": "13434688328520635",
             "guid": "1b80459f-e2b1-426d-b495-15fd790dbcf2",
             "id": "9",
             "meta_info": {
@@ -79,7 +79,7 @@
             "url": "https://mail.google.com/mail/u/0/#inbox"
          }, {
             "date_added": "13433136435832497",
-            "date_last_used": "13434094120002266",
+            "date_last_used": "13434685401693200",
             "guid": "ffdf63e7-9ffa-4f3c-874b-df41e3141e0f",
             "id": "11",
             "meta_info": {
@@ -90,7 +90,7 @@
             "url": "https://github.com/franelfers"
          }, {
             "date_added": "13433229951100580",
-            "date_last_used": "13433995368892218",
+            "date_last_used": "13434643974906738",
             "guid": "e4ba2a86-4d71-45f4-a7e3-bdbcd7f06ce4",
             "id": "13",
             "meta_info": {
@@ -99,10 +99,85 @@
             "name": "Steam gratis",
             "type": "url",
             "url": "https://store.steampowered.com/search/?sort_by=_ASC&force_infinite=1&maxprice=free&category1=998&specials=1&page=1"
+         }, {
+            "children": [ {
+               "date_added": "13434342138338876",
+               "date_last_used": "13434765768698647",
+               "guid": "b78b2ebe-136e-43d4-b743-882dd8d6e147",
+               "id": "22",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "mutonby/openshorts",
+               "type": "url",
+               "url": "https://github.com/mutonby/openshorts"
+            }, {
+               "date_added": "13434342143321029",
+               "date_last_used": "0",
+               "guid": "dd1a6eac-c75b-478f-8bf7-2651f71d2173",
+               "id": "23",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "presenton/presenton",
+               "type": "url",
+               "url": "https://github.com/presenton/presenton"
+            }, {
+               "date_added": "13434342132622921",
+               "date_last_used": "0",
+               "guid": "da72e7ec-4185-461d-a2f6-c2b5e5f4d70b",
+               "id": "21",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "every-app/open-seo",
+               "type": "url",
+               "url": "https://github.com/every-app/open-seo"
+            }, {
+               "date_added": "13434342127341149",
+               "date_last_used": "0",
+               "guid": "b46a3117-7070-414b-8635-c753a8e0244d",
+               "id": "20",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "langgenius/dify",
+               "type": "url",
+               "url": "https://github.com/langgenius/dify"
+            }, {
+               "date_added": "13434342113525945",
+               "date_last_used": "0",
+               "guid": "2b696cfe-66cc-40a4-9ced-001420322cce",
+               "id": "19",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "D4Vinci/Scrapling",
+               "type": "url",
+               "url": "https://github.com/D4Vinci/Scrapling"
+            }, {
+               "date_added": "13434342170133916",
+               "date_last_used": "0",
+               "guid": "492ebc2e-8fef-4f32-9362-01fe40b7aaca",
+               "id": "25",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "vladkens/twscrape",
+               "type": "url",
+               "url": "https://github.com/vladkens/twscrape"
+            } ],
+            "date_added": "13434342154895697",
+            "date_last_used": "0",
+            "date_modified": "13434589311175508",
+            "guid": "d0936320-f936-4d51-a4c9-4753eba0b032",
+            "id": "24",
+            "name": "Repos",
+            "type": "folder"
          } ],
          "date_added": "13432850148791378",
          "date_last_used": "0",
-         "date_modified": "13434006363373131",
+         "date_modified": "13434342154896706",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",

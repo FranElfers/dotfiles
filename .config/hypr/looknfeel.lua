@@ -56,7 +56,7 @@ hl.config({
             popups = true,
             size = 8,
         },
-        rounding = 16,
+        rounding = 8,
         rounding_power = 2.0,
     },
     general = {

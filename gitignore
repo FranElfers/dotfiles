@@ -1,3 +1,4 @@
+**NativeMessagingHosts/
 *.backup*
 *.bak*
 *.db
@@ -22,7 +23,20 @@
 .cache/
 .cargo/git/
 .cargo/registry/
+.claude.json
+.claude/.credentials.json
+.claude/.last-cleanup
+.claude/chrome/chrome-native-host
+.claude/file-history/
+.claude/history.jsonl
+.claude/plugins/
+.claude/plugins/known_marketplaces.json
+.claude/plugins/synced/
 .claude/projects/
+.claude/sessions/
+.claude/shell-snapshots/
+.claude/skills/synced/
+.claude/state/mcp-discover-verdicts.json
 .claude/themes/omarchy.json
 .codex/.tmp/
 .codex/tmp/
@@ -54,11 +68,27 @@
 .config/Antigravity/SingletonSocket
 .config/Antigravity/app_storage.json
 .config/BraveSoftware/
+.config/Claude/Cookies
+.config/Claude/DIPS-wal
+.config/Claude/IndexedDB/
+.config/Claude/IndexedDB/https_claude.ai_0.indexeddb.blob/4/00/1e
 .config/Claude/IndexedDB/https_claude.ai_0.indexeddb.leveldb/
 .config/Claude/Local Storage/leveldb/
+.config/Claude/Network Persistent State
 .config/Claude/Session Storage/
+.config/Claude/Singleton*
+.config/Claude/TransportSecurity
+.config/Claude/WebStorage/QuotaManager
+.config/Claude/WebStorage/QuotaManager-journal
+.config/Claude/ant-device-registry.json
+.config/Claude/buddy-tokens.json
 .config/Claude/claude-code-sessions/
+.config/Claude/extensions-blocklist.json
+.config/Claude/git-worktrees.json
 .config/Claude/local-agent-mode-sessions/
+.config/Claude/plan-usage-history.json
+.config/Claude/sentry/scope_v3.json
+.config/Claude/sentry/session.json
 .config/Claude/shared_proto_db/
 .config/FreeCAD/v1-1/system.cfg
 .config/FreeCAD/v1-1/user.cfg
@@ -155,6 +185,7 @@
 .local/share/cliamp/album-art/
 .local/share/fastpotify/
 .local/share/flatpak/
+.local/share/gvfs-metadata/
 .local/share/gvfs-metadata/home
 .local/share/gvfs-metadata/root
 .local/share/hyprland/
@@ -171,6 +202,7 @@
 .local/share/pki/
 .local/share/pnpm/
 .local/share/recently-used.xbel
+.local/share/spotifast/
 .local/share/vulkan/implicit_layer.d/
 .local/share/zed/
 .local/state/**/clipboard*
@@ -192,6 +224,7 @@
 .local/state/opencode/
 .local/state/pnpm/pnpm-state.json
 .local/state/skills/.skill-lock.json
+.local/state/spotifast/
 .local/state/syncthing/
 .local/state/wireplumber/
 .local/state/yazi/.dds

@@ -41,7 +41,8 @@
           "id": "gigasolo.omavoice",
           "enabled": true,
           "preset": "podcast",
-          "setDefaultSource": true
+          "setDefaultSource": true,
+          "previousAudioSource": "alsa_input.usb-Generic_USB_Audio-00.analog-stereo"
         },
         {
           "id": "org.omarchy.btrfs-raid-manager"
@@ -108,10 +109,6 @@
     }
   ],
   "version": 1,
-  "disabledPlugins": [
-    "omarchy.lock"
-  ],
-  "cloneSourceRestores": [
-    "io.github.sirjul1337.lock-explorer"
-  ]
+  "disabledPlugins": ["omarchy.lock"],
+  "cloneSourceRestores": ["io.github.sirjul1337.lock-explorer"]
 }

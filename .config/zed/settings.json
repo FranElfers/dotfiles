@@ -22,7 +22,7 @@
     },
     "default_model": {
       "provider": "vercel_ai_gateway",
-      "model": "anthropic/claude-opus-4.8"
+      "model": "anthropic/claude-opus-4.8",
     },
   },
   "format_on_save": "on",
@@ -147,10 +147,12 @@
           "max_output_tokens": 128000,
           "capabilities": {
             "tools": true,
-            "images": true
-          }
-        }
-      ]
-    }
+            "images": true,
+            "parallel_tool_calls": false,
+            "prompt_cache_key": false,
+          },
+        },
+      ],
+    },
   },
 }

@@ -177,6 +177,7 @@
 .local/bin/atmos
 .local/share/Antra/
 .local/share/FreeCAD/v1-1/SavedPreferencePacks/
+.local/share/Omacom/omawrite/
 .local/share/Steam/
 .local/share/Trash/
 .local/share/aether/mediakeys/v1/salt

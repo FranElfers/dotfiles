@@ -29,13 +29,13 @@ update_omarchy() {
 }
 
 install_packages_pacman() {
-    omarchy pkg add nano yazi github-cli zed bun go fuse2 webkit2gtk-4.1 uv syncthing flatpak gimp
+    omarchy pkg add nano yazi github-cli fuse2 webkit2gtk-4.1 uv syncthing flatpak gimp
     omarchy pkg drop obsidian herdr lazygit libreoffice-fresh
 }
 
 install_packages_aur() {
-    yay -S github-desktop-bin omazed spotifast-bin --noconfirm
-    omazed setup
+    yay -S github-desktop-bin spotifast-bin --noconfirm
+    mise use -g bun go zed
 }
 
 install_plugins() {
@@ -132,7 +132,6 @@ download_external_apps() {
     flatpak install flathub com.stremio.Stremio -y
     curl -LsSf https://llama.app/install.sh | sh &
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash &
-    curl -fsSL https://bun.sh/install | bash &
     curl -fsSL https://get.pnpm.io/install.sh | sh - &
     curl -fsSL https://antigravity.google/cli/install.sh | bash
     curl -Lo "$USER_HOME/Antra.AppImage" https://github.com/anandprtp/Antra/releases/latest/download/Antra-Linux.AppImage &

@@ -226,6 +226,7 @@
 .local/state/pnpm/pnpm-state.json
 .local/state/skills/.skill-lock.json
 .local/state/spotifast/
+.local/state/spotifast/history.json
 .local/state/syncthing/
 .local/state/wireplumber/
 .local/state/yazi/.dds

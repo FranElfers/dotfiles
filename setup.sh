@@ -29,13 +29,13 @@ update_omarchy() {
 }
 
 install_packages_pacman() {
-    omarchy pkg add nano yazi github-cli fuse2 webkit2gtk-4.1 uv syncthing flatpak gimp
+    omarchy pkg add nano yazi github-cli zed fuse2 webkit2gtk-4.1 uv syncthing flatpak gimp
     omarchy pkg drop obsidian herdr lazygit libreoffice-fresh
 }
 
 install_packages_aur() {
     yay -S github-desktop-bin spotifast-bin --noconfirm
-    mise use -g bun go zed
+    mise use -g bun go
 }
 
 install_plugins() {
@@ -44,7 +44,7 @@ install_plugins() {
     omarchy plugin add https://github.com/SirJul1337/omarchy-lock-explorer.git --enable -y &
     omarchy plugin add https://github.com/brianblakely/omarchy-plugins.git --enable -y &
     omarchy plugin add https://github.com/ussego/otoru.git --enable -y &
-    omarchy plugin add https://github.com/TheTrueFerret/omarchy-decent-workspaces.git --enable -y &
+    omarchy plugin add https://github.com/tornikegomareli/omarchy-spaces.git --enable -y &
     omarchy plugin add https://github.com/ssupt/omarchy-bluetooth-audio.git --enable -y &
     omarchy plugin add https://github.com/edgarsilva/omarchy-hw-monitor.git --enable -y &
     omarchy plugin add https://github.com/ssupt/omarchy-audio-control.git --enable -y &
@@ -218,7 +218,7 @@ declare -A MODULE_DESCS=(
     ["install_packages_aur"]="Instalar paquetes AUR"
     ["install_plugins"]="Instalar plugins de Omarchy"
     ["download_configs"]="Descargar dotfiles y configuraciones"
-    ["download_external_apps"]="Instalar aplicaciones externas (Stremio / Llama / NVM / Bun / etc.)"
+    ["download_external_apps"]="Instalar aplicaciones externas (Stremio / Llama / NVM / Pnpm / etc.)"
     ["custom_login_theme"]="Instalar pantalla Login personalizada"
     ["delete_webapps"]="Eliminar Webapps (menos Discord, Maps y Whatsapp)"
     ["remove_ugly_themes"]="Eliminar themes feos (para ahorrar espacio)"

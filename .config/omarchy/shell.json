@@ -4,7 +4,23 @@
     "layout": {
       "center": [
         {
-          "id": "tornikegomareli.spaces"
+          "id": "tornikegomareli.spaces",
+          "activeClick": "none",
+          "activeStyle": "accent",
+          "animationSpeed": "normal",
+          "animations": false,
+          "density": "roomy",
+          "dimUnfocused": false,
+          "focusedTitle": false,
+          "groupApps": true,
+          "hideEmpty": true,
+          "iconSize": 16,
+          "iconStyle": "color",
+          "labelStyle": "none",
+          "maxIcons": 8,
+          "persistentWorkspaces": 5,
+          "showApps": "all",
+          "showIcons": true
         }
       ],
       "left": [
@@ -109,6 +125,10 @@
     }
   ],
   "version": 1,
-  "disabledPlugins": ["omarchy.lock"],
-  "cloneSourceRestores": ["io.github.sirjul1337.lock-explorer"]
+  "disabledPlugins": [
+    "omarchy.lock"
+  ],
+  "cloneSourceRestores": [
+    "io.github.sirjul1337.lock-explorer"
+  ]
 }

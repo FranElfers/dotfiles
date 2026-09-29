@@ -21,6 +21,7 @@
 .bashrc
 .bun_repl_history
 .cache/
+.cargo/
 .cargo/git/
 .cargo/registry/
 .claude.json
@@ -145,7 +146,7 @@
 .config/pulse/*-runtime
 .config/pulse/cookie
 .config/retroarch/
-.config/spotifast/milkdrop/
+.config/spotifast/
 .config/spotify/
 .config/starship.toml
 .config/systemd/user/default.target.wants/syncthing.service
@@ -173,6 +174,7 @@
 .gemini/projects.json
 .gemini/tmp/fran/.project_root
 .gemini/trustedFolders.json
+.hermes/skins/omarchy.yaml
 .local/bin/agy
 .local/bin/atmos
 .local/share/Antra/
@@ -226,8 +228,8 @@
 .local/state/pnpm/pnpm-state.json
 .local/state/skills/.skill-lock.json
 .local/state/spotifast/
-.local/state/spotifast/history.json
 .local/state/syncthing/
+.local/state/tensaku/state.toml
 .local/state/wireplumber/
 .local/state/yazi/.dds
 .minecraft
@@ -235,9 +237,12 @@
 .node_repl_history
 .npm/
 .omp/
+.photon/automation/
 .pi/agent/themes/omarchy-system.json
 .pki/
 .pulse-cookie
+.rustup/toolchains/
+.rustup/update-hashes/
 .ssh/
 .steam/
 .steampath
@@ -248,6 +253,7 @@
 .var/app/com.obsproject.Studio/config/obs-studio/plugin_config/rtmp-services/
 .var/app/com.obsproject.Studio/config/obs-studio/profiler_data/
 .var/app/com.stremio.Stremio/
+.var/app/com.tenzen.photon/config/Photon Studio/
 .var/app/org.gimp.GIMP/data/
 .var/app/org.nickvision.cavalier/config/Nickvision Cavalier/config.json
 Documents/

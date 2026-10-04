@@ -9,6 +9,7 @@ backup_config() {
 
 backup_config .bash_profile
 backup_config .bashrc
+backup_config .claude/settings.json
 backup_config .config/btop/btop.conf
 backup_config .config/cliamp/config.toml
 backup_config .config/cliamp/playlists/radio-stations.toml

@@ -1,6 +1,7 @@
 **NativeMessagingHosts/
 *.backup*
 *.bak*
+*.bin
 *.db
 *.ldb
 *.localstorage*
@@ -28,8 +29,10 @@
 .claude/.credentials.json
 .claude/.last-cleanup
 .claude/chrome/chrome-native-host
+.claude/daemon/
 .claude/file-history/
 .claude/history.jsonl
+.claude/jobs/
 .claude/plugins/
 .claude/plugins/known_marketplaces.json
 .claude/plugins/synced/
@@ -40,6 +43,7 @@
 .claude/state/mcp-discover-verdicts.json
 .claude/themes/omarchy.json
 .codex/.tmp/
+.codex/skills/.system/.codex-system-skills.marker
 .codex/tmp/
 .codex/version.json
 .config/Antigravity IDE/Backups/
@@ -69,6 +73,7 @@
 .config/Antigravity/SingletonSocket
 .config/Antigravity/app_storage.json
 .config/BraveSoftware/
+.config/Claude/
 .config/Claude/Cookies
 .config/Claude/DIPS-wal
 .config/Claude/IndexedDB/
@@ -169,14 +174,18 @@
 .gemini/config/projects/
 .gemini/extension_integrity.json
 .gemini/extensions/
+.gemini/google_accounts.json
 .gemini/history/fran/.project_root
 .gemini/installation_id
+.gemini/oauth_creds.json
 .gemini/projects.json
 .gemini/tmp/fran/.project_root
 .gemini/trustedFolders.json
 .hermes/skins/omarchy.yaml
+.llama-app/
 .local/bin/agy
 .local/bin/atmos
+.local/bin/llama
 .local/share/Antra/
 .local/share/FreeCAD/v1-1/SavedPreferencePacks/
 .local/share/Omacom/omawrite/
@@ -254,6 +263,7 @@
 .var/app/com.obsproject.Studio/config/obs-studio/profiler_data/
 .var/app/com.stremio.Stremio/
 .var/app/com.tenzen.photon/config/Photon Studio/
+.var/app/io.appflowy.AppFlowy/
 .var/app/org.gimp.GIMP/data/
 .var/app/org.nickvision.cavalier/config/Nickvision Cavalier/config.json
 Documents/

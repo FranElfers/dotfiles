@@ -21,8 +21,8 @@
       "threshold": "90%",
     },
     "default_model": {
-      "provider": "vercel_ai_gateway",
-      "model": "anthropic/claude-opus-4.8",
+      "provider": "llama.cpp",
+      "model": "gemma-4-12B-it-Q8_0.gguf",
     },
   },
   "format_on_save": "on",

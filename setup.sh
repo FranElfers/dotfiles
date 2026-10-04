@@ -78,6 +78,7 @@ download_configs() {
 
     download_config .bash_profile
     download_config .bashrc
+    download_config .claude/settings.json
     download_config .config/btop/btop.conf
     download_config .config/cliamp/config.toml
     download_config .config/cliamp/playlists/radio-stations.toml

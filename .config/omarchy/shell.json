@@ -51,6 +51,9 @@
           "id": "omarchy.tray"
         },
         {
+          "id": "org.omarchy.btrfs-raid-manager"
+        },
+        {
           "id": "omarchy.system-update"
         },
         {
@@ -59,9 +62,6 @@
           "preset": "podcast",
           "setDefaultSource": true,
           "previousAudioSource": "alsa_input.usb-Generic_USB_Audio-00.analog-stereo"
-        },
-        {
-          "id": "org.omarchy.btrfs-raid-manager"
         },
         {
           "id": "ussego.otoru"

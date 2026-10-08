@@ -2,7 +2,7 @@
   "env": {
     "CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY": "1"
   },
-  "model": "sonnet",
+  "model": "haiku",
   "enabledPlugins": {
     "ponytail@ponytail": true
   },
@@ -16,10 +16,13 @@
   },
   "modelSettings": {
     "claude-opus-5-5": {
-      "effortLevel": "high"
+      "effortLevel": "low"
     },
     "claude-sonnet-5-5": {
       "effortLevel": "medium"
+    },
+    "claude-haiku-5-5": {
+      "effortLevel": "high"
     }
   },
   "theme": "auto",

@@ -51,6 +51,9 @@
           "id": "omarchy.tray"
         },
         {
+          "id": "sero.local-ai"
+        },
+        {
           "id": "org.omarchy.btrfs-raid-manager"
         },
         {
@@ -58,10 +61,10 @@
         },
         {
           "id": "gigasolo.omavoice",
-          "enabled": true,
+          "enabled": false,
           "preset": "podcast",
-          "setDefaultSource": true,
-          "previousAudioSource": "alsa_input.usb-Generic_USB_Audio-00.analog-stereo"
+          "previousAudioSource": "alsa_input.usb-Generic_USB_Audio-00.analog-stereo",
+          "setDefaultSource": true
         },
         {
           "id": "ussego.otoru"
@@ -125,10 +128,6 @@
     }
   ],
   "version": 1,
-  "disabledPlugins": [
-    "omarchy.lock"
-  ],
-  "cloneSourceRestores": [
-    "io.github.sirjul1337.lock-explorer"
-  ]
+  "disabledPlugins": ["omarchy.lock"],
+  "cloneSourceRestores": ["io.github.sirjul1337.lock-explorer"]
 }

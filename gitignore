@@ -8,6 +8,7 @@
 *.log
 *.old
 *.sqlite*
+*.tmp*
 *Cache*
 *cache*
 *cookie
@@ -38,6 +39,7 @@
 .claude/plugins/synced/
 .claude/projects/
 .claude/sessions/
+.claude/settings.json
 .claude/shell-snapshots/
 .claude/skills/synced/
 .claude/state/mcp-discover-verdicts.json
@@ -46,6 +48,7 @@
 .codex/skills/.system/.codex-system-skills.marker
 .codex/tmp/
 .codex/version.json
+.config/.wrangler/config/default.toml
 .config/Antigravity IDE/Backups/
 .config/Antigravity IDE/Crashpad/
 .config/Antigravity IDE/DIPS
@@ -110,6 +113,7 @@
 .config/blender/5.2/config/userpref.blend
 .config/blender/5.2/extensions/
 .config/btop/btop.conf
+.config/chromium-headless/
 .config/chromium/
 .config/cliamp/cliamp.sock*
 .config/cliamp/config.toml
@@ -127,6 +131,7 @@
 .config/go/
 .config/google-chrome*/
 .config/gtk-3.0/bookmarks
+.config/gumroad/
 .config/hypr/.luarc.json
 .config/hypr/bindings.lua
 .config/hypr/hyprland-gui.lua
@@ -139,6 +144,7 @@
 .config/microsoft-edge*/
 .config/mise/config.toml
 .config/mozilla/
+.config/obsidian/
 .config/omarchy/*.json*.lock
 .config/omarchy/audio-preferences.json
 .config/omarchy/branding/about.txt
@@ -154,7 +160,9 @@
 .config/spotifast/
 .config/spotify/
 .config/starship.toml
+.config/systemd/user/
 .config/systemd/user/default.target.wants/syncthing.service
+.config/tailcat/
 .config/unity3d/LandCrab/PEAK/steam_autocloud.vdf
 .config/wayvibes/input_device_path
 .config/yazi/yazi.toml
@@ -203,6 +211,7 @@
 .local/share/hyprland/
 .local/share/icons/hicolor/
 .local/share/keyrings/
+.local/share/man/man1/
 .local/share/mise/
 .local/share/nautilus*
 .local/share/nvim/
@@ -217,6 +226,7 @@
 .local/share/spotifast/
 .local/share/vulkan/implicit_layer.d/
 .local/share/zed/
+.local/share/zoxide/
 .local/state/**/clipboard*
 .local/state/fastpotify/
 .local/state/gh/device-id

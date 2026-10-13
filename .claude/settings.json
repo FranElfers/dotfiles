@@ -2,7 +2,7 @@
   "env": {
     "CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY": "1"
   },
-  "model": "haiku",
+  "model": "opus",
   "enabledPlugins": {
     "ponytail@ponytail": true
   },
@@ -14,9 +14,11 @@
       }
     }
   },
+  "outputStyle": "Concise",
   "modelSettings": {
     "claude-opus-5-5": {
-      "effortLevel": "low"
+      "effortLevel": "high",
+      "autoCompactWindow": 600000
     },
     "claude-sonnet-5-5": {
       "effortLevel": "medium"

@@ -1,5 +1,5 @@
 {
-   "checksum": "4602c8c5891d02ae92ec23fc865508f9",
+   "checksum": "64f5b6e1e39ef2abcb3e161cfa410ca2",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -57,7 +57,7 @@
             "url": "https://x.com/i/history"
          }, {
             "date_added": "13432882958956495",
-            "date_last_used": "13435641580502876",
+            "date_last_used": "13436235608663673",
             "guid": "5593b2bf-13d7-4136-a763-6471754dc8f2",
             "id": "7",
             "meta_info": {
@@ -68,7 +68,7 @@
             "url": "https://gemini.google.com/app"
          }, {
             "date_added": "13435198623604595",
-            "date_last_used": "13435903878860191",
+            "date_last_used": "13436255206987360",
             "guid": "712fa7d1-37f1-44e1-95a3-39439e5a3ce7",
             "id": "29",
             "meta_info": {
@@ -79,7 +79,7 @@
             "url": "https://claude.ai/code"
          }, {
             "date_added": "13432916193516911",
-            "date_last_used": "13435965969938389",
+            "date_last_used": "13435983117020046",
             "guid": "1b80459f-e2b1-426d-b495-15fd790dbcf2",
             "id": "9",
             "meta_info": {
@@ -90,7 +90,7 @@
             "url": "https://mail.google.com/mail/u/0/#inbox"
          }, {
             "date_added": "13433136435832497",
-            "date_last_used": "13435640878607934",
+            "date_last_used": "13436256527047770",
             "guid": "ffdf63e7-9ffa-4f3c-874b-df41e3141e0f",
             "id": "11",
             "meta_info": {
@@ -157,7 +157,7 @@
                "url": "https://github.com/langgenius/dify"
             }, {
                "date_added": "13434342113525945",
-               "date_last_used": "0",
+               "date_last_used": "13436255192933669",
                "guid": "2b696cfe-66cc-40a4-9ced-001420322cce",
                "id": "19",
                "meta_info": {
@@ -227,10 +227,21 @@
             "id": "35",
             "name": "Syncthing",
             "type": "folder"
+         }, {
+            "date_added": "13436126448717421",
+            "date_last_used": "13436255641965813",
+            "guid": "ec5602c4-416a-4f16-b2e8-9f0bcf27d95b",
+            "id": "39",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Test Fire: Armor Penetration Sim by Matthew Zhang, roastrice",
+            "type": "url",
+            "url": "https://matthewz80.itch.io/test-fire"
          } ],
          "date_added": "13432850148791378",
          "date_last_used": "0",
-         "date_modified": "13435370555701342",
+         "date_modified": "13436126448717421",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",

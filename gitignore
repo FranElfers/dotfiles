@@ -44,7 +44,6 @@
 .claude/skills/synced/
 .claude/state/mcp-discover-verdicts.json
 .claude/themes/omarchy.json
-.codex/.tmp/
 .codex/skills/.system/.codex-system-skills.marker
 .codex/tmp/
 .codex/version.json
@@ -92,6 +91,7 @@
 .config/Claude/ant-device-registry.json
 .config/Claude/buddy-tokens.json
 .config/Claude/claude-code-sessions/
+.config/Claude/claude_desktop_config.json
 .config/Claude/extensions-blocklist.json
 .config/Claude/git-worktrees.json
 .config/Claude/local-agent-mode-sessions/
@@ -201,6 +201,7 @@
 .local/share/Trash/
 .local/share/aether/mediakeys/v1/salt
 .local/share/aether/storage/salt
+.local/share/applications/com.anthropic.Claude.desktop
 .local/share/atmos/
 .local/share/cliamp/album-art/
 .local/share/fastpotify/
@@ -211,6 +212,8 @@
 .local/share/hyprland/
 .local/share/icons/hicolor/
 .local/share/keyrings/
+.local/share/kio/servicemenus/
+.local/share/kservices5/ServiceMenus/
 .local/share/man/man1/
 .local/share/mise/
 .local/share/nautilus*

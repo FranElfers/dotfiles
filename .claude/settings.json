@@ -2,7 +2,7 @@
   "env": {
     "CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY": "1"
   },
-  "model": "opus",
+  "model": "haiku",
   "enabledPlugins": {
     "ponytail@ponytail": true
   },

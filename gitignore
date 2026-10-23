@@ -41,6 +41,7 @@
 .claude/sessions/
 .claude/settings.json
 .claude/shell-snapshots/
+.claude/skills/.trash/
 .claude/skills/synced/
 .claude/state/mcp-discover-verdicts.json
 .claude/themes/omarchy.json
@@ -66,6 +67,7 @@
 .config/Antigravity/DIPS-wal
 .config/Antigravity/DevToolsActivePort
 .config/Antigravity/Dictionaries/
+.config/Antigravity/Local State
 .config/Antigravity/Local Storage/
 .config/Antigravity/Network Persistent State
 .config/Antigravity/Session Storage/
@@ -74,6 +76,7 @@
 .config/Antigravity/SingletonLock
 .config/Antigravity/SingletonSocket
 .config/Antigravity/app_storage.json
+.config/Antigravity/declarative_performance_observer.db-journal
 .config/BraveSoftware/
 .config/Claude/
 .config/Claude/Cookies
@@ -103,6 +106,8 @@
 .config/FreeCAD/v1-1/user.cfg
 .config/GIMP/
 .config/GitHub Desktop/
+.config/Half Games/HalfGrip/
+.config/LeadertyPlatform/
 .config/Omacom/omacalc.conf
 .config/Omacom/omawrite.conf
 .config/QtProject.conf
@@ -163,8 +168,11 @@
 .config/systemd/user/
 .config/systemd/user/default.target.wants/syncthing.service
 .config/tailcat/
+.config/turborepo/telemetry.json
+.config/unity3d/
 .config/unity3d/LandCrab/PEAK/steam_autocloud.vdf
 .config/wayvibes/input_device_path
+.config/wireplumber/
 .config/yazi/yazi.toml
 .config/zed/keymap.json
 .config/zed/settings.json
@@ -177,14 +185,25 @@
 .gemini/antigravity-ide/mcp/gemini-api-docs/
 .gemini/antigravity/agyhub_summaries_proto.pb
 .gemini/antigravity/annotations/
+.gemini/antigravity/antigravity_state.pbtxt
+.gemini/antigravity/bin/
+.gemini/antigravity/brain/
+.gemini/antigravity/builtin/
+.gemini/antigravity/builtin/.checksum
 .gemini/antigravity/conversations/
+.gemini/antigravity/lib/
+.gemini/antigravity/mcp/
+.gemini/antigravity/presence/
 .gemini/config/.migrated
+.gemini/config/node_modules/
+.gemini/config/plugins/gemini-api/
 .gemini/config/projects/
 .gemini/extension_integrity.json
 .gemini/extensions/
 .gemini/google_accounts.json
 .gemini/history/fran/.project_root
 .gemini/installation_id
+.gemini/jetski-standalone-oauth-token
 .gemini/oauth_creds.json
 .gemini/projects.json
 .gemini/tmp/fran/.project_root
@@ -242,6 +261,7 @@
 .local/state/omarchy/agents/usage/
 .local/state/omarchy/current/
 .local/state/omarchy/indicators/stay-awake
+.local/state/omarchy/local-ai/outdated.json
 .local/state/omarchy/migrations/
 .local/state/omarchy/notifications/
 .local/state/omarchy/powerprofiles/battery

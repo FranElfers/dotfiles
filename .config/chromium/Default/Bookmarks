@@ -1,5 +1,5 @@
 {
-   "checksum": "64f5b6e1e39ef2abcb3e161cfa410ca2",
+   "checksum": "c0cac377009b09c8ee4a286bd426623c",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -27,7 +27,7 @@
                "url": "https://app.notion.com/p/franciscoelfers/Inform-tica-30d9ebc5cca14b259a48cbd50e59193e"
             }, {
                "date_added": "13434006105826185",
-               "date_last_used": "13436773901499414",
+               "date_last_used": "13437612940193754",
                "guid": "8ed6c5d6-30bf-4bea-b31f-3f0ae1fab042",
                "id": "16",
                "meta_info": {
@@ -46,7 +46,7 @@
             "type": "folder"
          }, {
             "date_added": "13435370548289633",
-            "date_last_used": "13436775919115038",
+            "date_last_used": "13437614700315962",
             "guid": "8ecc33fe-d716-4a52-8035-50639cb32012",
             "id": "37",
             "meta_info": {
@@ -57,7 +57,7 @@
             "url": "https://x.com/i/history"
          }, {
             "date_added": "13432882958956495",
-            "date_last_used": "13436396754610219",
+            "date_last_used": "13437667863489656",
             "guid": "5593b2bf-13d7-4136-a763-6471754dc8f2",
             "id": "7",
             "meta_info": {
@@ -67,19 +67,8 @@
             "type": "url",
             "url": "https://gemini.google.com/app"
          }, {
-            "date_added": "13435198623604595",
-            "date_last_used": "13436255206987360",
-            "guid": "712fa7d1-37f1-44e1-95a3-39439e5a3ce7",
-            "id": "29",
-            "meta_info": {
-               "power_bookmark_meta": ""
-            },
-            "name": "",
-            "type": "url",
-            "url": "https://claude.ai/code"
-         }, {
             "date_added": "13432916193516911",
-            "date_last_used": "13435983117020046",
+            "date_last_used": "13438136090210686",
             "guid": "1b80459f-e2b1-426d-b495-15fd790dbcf2",
             "id": "9",
             "meta_info": {
@@ -90,7 +79,7 @@
             "url": "https://mail.google.com/mail/u/0/#inbox"
          }, {
             "date_added": "13433136435832497",
-            "date_last_used": "13437175831723722",
+            "date_last_used": "13438136976951806",
             "guid": "ffdf63e7-9ffa-4f3c-874b-df41e3141e0f",
             "id": "11",
             "meta_info": {
@@ -101,7 +90,7 @@
             "url": "https://github.com/franelfers"
          }, {
             "date_added": "13433229951100580",
-            "date_last_used": "13437115949520694",
+            "date_last_used": "13437844938564417",
             "guid": "e4ba2a86-4d71-45f4-a7e3-bdbcd7f06ce4",
             "id": "13",
             "meta_info": {
@@ -146,7 +135,7 @@
                "url": "https://github.com/every-app/open-seo"
             }, {
                "date_added": "13434342127341149",
-               "date_last_used": "13436426855553558",
+               "date_last_used": "13437546798058249",
                "guid": "b46a3117-7070-414b-8635-c753a8e0244d",
                "id": "20",
                "meta_info": {
@@ -229,7 +218,7 @@
             "type": "folder"
          }, {
             "date_added": "13436126448717421",
-            "date_last_used": "13436255641965813",
+            "date_last_used": "13437846651161952",
             "guid": "ec5602c4-416a-4f16-b2e8-9f0bcf27d95b",
             "id": "39",
             "meta_info": {

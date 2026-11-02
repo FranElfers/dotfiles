@@ -313,5 +313,6 @@ db.*
 go/pkg/
 llms/
 logs*
+salt
 steam.desktop
 vm*

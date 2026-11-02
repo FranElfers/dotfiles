@@ -60,7 +60,7 @@ hl.config({
         rounding_power = 2.0,
     },
     general = {
-        border_size = 2,
+        border_size = 1,
         col = {
             active_border = "0xff7daea3",
             inactive_border = "0xaa595959",

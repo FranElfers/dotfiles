@@ -6,6 +6,7 @@ local omarchy_monitor_scale = 1
 
 hl.env("GDK_SCALE", tostring(omarchy_gdk_scale))
 hl.monitor({ output = "", mode = "preferred", position = "auto", scale = omarchy_monitor_scale })
+hl.monitor({ output = "DP-2", mode = "preferred", position = "auto", scale = 1.25 })
 
 -- Configure a specific monitor.
 -- hl.monitor({

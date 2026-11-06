@@ -1,0 +1,12 @@
+#!/bin/bash
+# Toggle "new windows open floating" on the active workspace (SUPER+L).
+DIR="$HOME/.local/state/omarchy/floating-workspaces"
+WS=$(hyprctl activeworkspace -j | jq -r '.id')
+[[ $WS =~ ^-?[0-9]+$ ]] || exit 1
+mkdir -p "$DIR"
+if [[ -e $DIR/$WS ]]; then
+  rm "$DIR/$WS"; MODE=dwindle
+else
+  touch "$DIR/$WS"; MODE=floating
+fi
+omarchy-notification-send -g 󱂬 "Workspace layout set to $MODE"

@@ -45,10 +45,10 @@
       ],
       "right": [
         {
-          "id": "omarchy.indicators"
+          "id": "omarchy.tray"
         },
         {
-          "id": "omarchy.tray"
+          "id": "omarchy.indicators"
         },
         {
           "id": "sero.local-ai"

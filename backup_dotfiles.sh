@@ -24,10 +24,12 @@ backup_config .config/hypr/hyprland.lua
 backup_config .config/hypr/input.lua
 backup_config .config/hypr/looknfeel.lua
 backup_config .config/hypr/monitors.lua
+backup_config .config/hypr/scripts/workspace-float-toggle
 backup_config .config/omarchy/audio-preferences.json
 backup_config .config/omarchy/audio-rules.json
 backup_config .config/omarchy/branding/about.txt
 backup_config .config/omarchy/branding/screensaver.txt
+backup_config .config/omarchy/defaults/agent
 backup_config .config/omarchy/shell.json
 backup_config .config/omarchy/ussego.otoru.json
 backup_config .config/opencode/opencode.json

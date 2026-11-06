@@ -1,6 +1,6 @@
 {
   "allowNonWorkspaceAccess": true,
-  "model": "Gemini 3.8 Flash (High)",
+  "model": "Gemini 4 Argon (Medium)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -81,6 +81,7 @@
     "/home/fran/repos/franelfers/professional-api",
     "/home/fran/Projects/x-scrapper",
     "/home/fran/Projects/jev",
-    "/home/fran/Projects/omarchy-snapdragon"
+    "/home/fran/Projects/omarchy-snapdragon",
+    "/home/fran/Work"
   ]
 }

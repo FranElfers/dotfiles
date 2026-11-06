@@ -1,3 +1,4 @@
+**/skills/omarchy-app
 **NativeMessagingHosts/
 *.backup*
 *.bak*
@@ -5,6 +6,7 @@
 *.db
 *.ldb
 *.localstorage*
+*.lock
 *.log
 *.old
 *.sqlite*
@@ -45,7 +47,9 @@
 .claude/skills/synced/
 .claude/state/mcp-discover-verdicts.json
 .claude/themes/omarchy.json
+.claude/uploads/
 .codex/skills/.system/.codex-system-skills.marker
+.codex/skills/.system/openai-docs/
 .codex/tmp/
 .codex/version.json
 .config/.wrangler/config/default.toml
@@ -70,6 +74,7 @@
 .config/Antigravity/Local State
 .config/Antigravity/Local Storage/
 .config/Antigravity/Network Persistent State
+.config/Antigravity/Partitions/hub-browser-anonymous/
 .config/Antigravity/Session Storage/
 .config/Antigravity/SharedStorage-wal
 .config/Antigravity/SingletonCookie
@@ -80,11 +85,13 @@
 .config/BraveSoftware/
 .config/Claude/
 .config/Claude/Cookies
+.config/Claude/DIPS
 .config/Claude/DIPS-wal
 .config/Claude/IndexedDB/
 .config/Claude/IndexedDB/https_claude.ai_0.indexeddb.blob/4/00/1e
 .config/Claude/IndexedDB/https_claude.ai_0.indexeddb.leveldb/
 .config/Claude/Local Storage/leveldb/
+.config/Claude/Local*
 .config/Claude/Network Persistent State
 .config/Claude/Session Storage/
 .config/Claude/Singleton*
@@ -113,6 +120,7 @@
 .config/QtProject.conf
 .config/atmos/channel
 .config/blender/5.2/config/bookmarks.txt
+.config/blender/5.2/config/platform_support.txt
 .config/blender/5.2/config/recent-files.txt
 .config/blender/5.2/config/userpref.blend
 .config/blender/5.2/config/userpref.blend
@@ -145,15 +153,18 @@
 .config/hypr/looknfeel.lua
 .config/hypr/looknfeel.lua
 .config/hypr/monitors.lua
+.config/hypr/scripts/workspace-float-toggle
 .config/ibus/
 .config/microsoft-edge*/
 .config/mise/config.toml
 .config/mozilla/
+.config/nvim/
 .config/obsidian/
 .config/omarchy/*.json*.lock
 .config/omarchy/audio-preferences.json
 .config/omarchy/branding/about.txt
 .config/omarchy/branding/screensaver.txt
+.config/omarchy/defaults/agent
 .config/omarchy/hooks/theme-set*
 .config/omarchy/plugins/*bak*
 .config/omarchy/shell.json
@@ -189,7 +200,6 @@
 .gemini/antigravity/bin/
 .gemini/antigravity/brain/
 .gemini/antigravity/builtin/
-.gemini/antigravity/builtin/.checksum
 .gemini/antigravity/conversations/
 .gemini/antigravity/lib/
 .gemini/antigravity/mcp/
@@ -213,42 +223,7 @@
 .local/bin/agy
 .local/bin/atmos
 .local/bin/llama
-.local/share/Antra/
-.local/share/FreeCAD/v1-1/SavedPreferencePacks/
-.local/share/Omacom/omawrite/
-.local/share/Steam/
-.local/share/Trash/
-.local/share/aether/mediakeys/v1/salt
-.local/share/aether/storage/salt
-.local/share/applications/com.anthropic.Claude.desktop
-.local/share/atmos/
-.local/share/cliamp/album-art/
-.local/share/fastpotify/
-.local/share/flatpak/
-.local/share/gvfs-metadata/
-.local/share/gvfs-metadata/home
-.local/share/gvfs-metadata/root
-.local/share/hyprland/
-.local/share/icons/hicolor/
-.local/share/keyrings/
-.local/share/kio/servicemenus/
-.local/share/kservices5/ServiceMenus/
-.local/share/man/man1/
-.local/share/mise/
-.local/share/nautilus*
-.local/share/nvim/
-.local/share/omazed/initialized
-.local/share/opencode/
-.local/share/opentui/
-.local/share/org.localsend.localsend_app/shared_preferences.json
-.local/share/pipx/
-.local/share/pki/
-.local/share/pnpm/
-.local/share/recently-used.xbel
-.local/share/spotifast/
-.local/share/vulkan/implicit_layer.d/
-.local/share/zed/
-.local/share/zoxide/
+.local/share/
 .local/state/**/clipboard*
 .local/state/fastpotify/
 .local/state/gh/device-id
@@ -260,12 +235,15 @@
 .local/state/okomart/
 .local/state/omarchy/agents/usage/
 .local/state/omarchy/current/
+.local/state/omarchy/floating-workspaces/
 .local/state/omarchy/indicators/stay-awake
 .local/state/omarchy/local-ai/outdated.json
 .local/state/omarchy/migrations/
 .local/state/omarchy/notifications/
 .local/state/omarchy/powerprofiles/battery
+.local/state/omarchy/theme-backgrounds/
 .local/state/omarchy/windows/about.fit
+.local/state/omarchy/workspace-layouts/1.lua
 .local/state/opencode/
 .local/state/pnpm/pnpm-state.json
 .local/state/skills/.skill-lock.json

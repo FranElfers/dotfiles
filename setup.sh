@@ -36,6 +36,7 @@ install_packages_pacman() {
 install_packages_aur() {
     yay -S github-desktop-bin spotifast-bin --noconfirm
     mise use -g bun go
+    mise uninstall --all opencode pi codex cursor-agent basecamp
 }
 
 install_plugins() {

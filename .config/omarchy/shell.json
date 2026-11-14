@@ -1,10 +1,10 @@
 {
   "bar": {
+    "background": "none",
     "centerAnchor": "io.github.thetrueferret.decent-workspaces",
     "layout": {
       "center": [
         {
-          "id": "tornikegomareli.spaces",
           "activeClick": "none",
           "activeStyle": "accent",
           "animationSpeed": "normal",
@@ -16,6 +16,7 @@
           "hideEmpty": true,
           "iconSize": 16,
           "iconStyle": "color",
+          "id": "tornikegomareli.spaces",
           "labelStyle": "none",
           "maxIcons": 8,
           "persistentWorkspaces": 5,
@@ -23,15 +24,17 @@
           "showIcons": true
         }
       ],
+      "centerBegin": [],
+      "centerEnd": [],
       "left": [
         {
           "id": "io.github.edgarsilva.hw-monitor",
           "mode": "full",
-          "showGauges": false,
-          "showValues": true,
-          "showClocks": false,
+          "padOpacity": 0,
           "ramFormat": "used",
-          "padOpacity": 0
+          "showClocks": false,
+          "showGauges": false,
+          "showValues": true
         },
         {
           "id": "omarchy.weather"
@@ -60,8 +63,8 @@
           "id": "omarchy.system-update"
         },
         {
-          "id": "gigasolo.omavoice",
           "enabled": false,
+          "id": "gigasolo.omavoice",
           "preset": "podcast",
           "previousAudioSource": "alsa_input.usb-Generic_USB_Audio-00.analog-stereo",
           "setDefaultSource": true
@@ -98,40 +101,40 @@
           "showPercentage": true
         },
         {
-          "id": "omarchy.clock",
           "birthYear": 2001,
           "format": "yyyy-MM-dd HH:mm",
           "formatAlt": "d MMMM 'W'ww yyyy",
+          "id": "omarchy.clock",
           "lifeExpectancy": 90,
           "verticalFormat": "HH\n—\nmm"
         }
-      ]
+      ],
+      "tray": []
     },
-    "position": "bottom",
-    "transparent": true
+    "position": "bottom"
   },
+  "cloneSourceRestores": [
+    "io.github.sirjul1337.lock-explorer"
+  ],
+  "disabledPlugins": [
+    "omarchy.lock"
+  ],
   "idle": {
     "lock": 1800,
     "screensaver": 300
   },
   "plugins": [
     {
-      "id": "io.github.sirjul1337.lock-explorer",
+      "avatar": "/home/fran/Pictures/foto.png",
       "design": "poster",
+      "id": "io.github.sirjul1337.lock-explorer",
       "unlock": "fade",
-      "unlockMs": 800,
-      "avatar": "/home/fran/Pictures/foto.png"
+      "unlockMs": 800
     },
     {
       "id": "b.okomart",
       "windowMode": "tiled"
     }
   ],
-  "version": 1,
-  "disabledPlugins": [
-    "omarchy.lock"
-  ],
-  "cloneSourceRestores": [
-    "io.github.sirjul1337.lock-explorer"
-  ]
+  "version": 1
 }

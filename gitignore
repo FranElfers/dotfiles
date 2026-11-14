@@ -225,6 +225,7 @@
 .local/bin/llama
 .local/share/
 .local/state/**/clipboard*
+.local/state/Omarchy/omasnap/recent/
 .local/state/fastpotify/
 .local/state/gh/device-id
 .local/state/herdr/
@@ -234,6 +235,7 @@
 .local/state/nvim/
 .local/state/okomart/
 .local/state/omarchy/agents/usage/
+.local/state/omarchy/background-intro.session-id
 .local/state/omarchy/current/
 .local/state/omarchy/floating-workspaces/
 .local/state/omarchy/indicators/stay-awake
@@ -275,6 +277,7 @@
 .var/app/com.stremio.Stremio/
 .var/app/com.tenzen.photon/config/Photon Studio/
 .var/app/io.appflowy.AppFlowy/
+.var/app/org.gimp.GIMP/.ld.so/
 .var/app/org.gimp.GIMP/data/
 .var/app/org.nickvision.cavalier/config/Nickvision Cavalier/config.json
 Documents/
@@ -288,6 +291,7 @@ Videos/
 Work/
 Zomboid/
 db.*
+go/bin/
 go/pkg/
 llms/
 logs*

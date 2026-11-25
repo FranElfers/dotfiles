@@ -55,3 +55,12 @@ hl.gesture({ fingers = 4, direction = "horizontal", action = "workspace" })
 hl.gesture({ fingers = 3, direction = "down", action = "close" })
 hl.gesture({ fingers = 3, direction = "up", action = function() hl.exec_cmd("foot") end })
 hl.gesture({ fingers = 4, direction = "up", action = function() hl.exec_cmd("[float; center] foot") end })
+
+-- Botones laterales del mouse (mouse:275 = atrás, mouse:276 = adelante).
+-- Atrás -> Super+Space (menu)
+o.bind("mouse:275", "Omarchy menu (mouse)", { menu = "root" })
+
+-- Adelante -> Super (Hymission)
+hl.bind("mouse:276", function()
+  if hl.plugin and hl.plugin.hymission then hl.plugin.hymission.toggle() end
+end, { description = "Mission Control (mouse)" })

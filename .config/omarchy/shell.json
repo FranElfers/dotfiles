@@ -24,7 +24,11 @@
           "showIcons": true
         }
       ],
-      "centerBegin": [],
+      "centerBegin": [
+        {
+          "id": "omarchy.indicators"
+        }
+      ],
       "centerEnd": [],
       "left": [
         {
@@ -51,9 +55,6 @@
           "id": "omarchy.tray"
         },
         {
-          "id": "omarchy.indicators"
-        },
-        {
           "id": "sero.local-ai"
         },
         {
@@ -61,16 +62,6 @@
         },
         {
           "id": "omarchy.system-update"
-        },
-        {
-          "enabled": false,
-          "id": "gigasolo.omavoice",
-          "preset": "podcast",
-          "previousAudioSource": "alsa_input.usb-Generic_USB_Audio-00.analog-stereo",
-          "setDefaultSource": true
-        },
-        {
-          "id": "ussego.otoru"
         },
         {
           "id": "iamkxyz.todo"
@@ -109,16 +100,27 @@
           "verticalFormat": "HH\n—\nmm"
         }
       ],
-      "tray": []
+      "tray": [
+        {
+          "enabled": false,
+          "id": "gigasolo.omavoice",
+          "preset": "podcast",
+          "previousAudioSource": "alsa_input.usb-Generic_USB_Audio-00.analog-stereo",
+          "setDefaultSource": true
+        },
+        {
+          "id": "ussego.otoru"
+        }
+      ]
     },
     "position": "bottom"
   },
-  "cloneSourceRestores": [
-    "io.github.sirjul1337.lock-explorer"
-  ],
-  "disabledPlugins": [
-    "omarchy.lock"
-  ],
+  "cloneSourceRestores": ["io.github.sirjul1337.lock-explorer"],
+  "disabledPlugins": ["omarchy.lock"],
+  "dock": {
+    "autohide": true,
+    "position": "bottom"
+  },
   "idle": {
     "lock": 1800,
     "screensaver": 300
@@ -133,7 +135,10 @@
     },
     {
       "id": "b.okomart",
-      "windowMode": "tiled"
+      "windowMode": "floating"
+    },
+    {
+      "id": "io.github.gfhdhytghd.hymission"
     }
   ],
   "version": 1

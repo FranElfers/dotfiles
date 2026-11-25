@@ -14,6 +14,7 @@ fi
 
 # Limpieza de terminal al salir o cancelar
 cleanup() {
+    [ -n "$REPO_DIR" ] && rm -rf "$REPO_DIR"
     tput cnorm 2>/dev/null || true
     tput sgr0 2>/dev/null || true
 }
@@ -29,28 +30,28 @@ update_omarchy() {
 }
 
 install_packages_pacman() {
-    omarchy pkg add nano yazi github-cli zed fuse2 webkit2gtk-4.1 uv syncthing flatpak gimp
-    omarchy pkg drop obsidian herdr lazygit libreoffice-fresh
+    omarchy pkg add nano yazi github-cli zed fuse2 webkit2gtk-4.1 webkitgtk-6.0 uv syncthing flatpak
+    omarchy pkg drop obsidian herdr lazygit libreoffice-fresh omarchy-hyprland-titlebars
 }
 
 install_packages_aur() {
-    yay -S github-desktop-bin spotifast-bin --noconfirm
+    omarchy pkg aur add github-desktop-bin spotifast-bin
     mise use -g bun go
     mise uninstall --all opencode pi codex cursor-agent basecamp
 }
 
 install_plugins() {
-    omarchy plugin add https://github.com/crmne/omarchy-hyprmoncfg.git --enable -y &
-    omarchy plugin add https://github.com/bscott/cliamp-oma-plugin.git --enable -y &
-    omarchy plugin add https://github.com/SirJul1337/omarchy-lock-explorer.git --enable -y &
-    omarchy plugin add https://github.com/brianblakely/omarchy-plugins.git --enable -y &
-    omarchy plugin add https://github.com/ussego/otoru.git --enable -y &
-    omarchy plugin add https://github.com/tornikegomareli/omarchy-spaces.git --enable -y &
-    omarchy plugin add https://github.com/ssupt/omarchy-bluetooth-audio.git --enable -y &
-    omarchy plugin add https://github.com/edgarsilva/omarchy-hw-monitor.git --enable -y &
-    omarchy plugin add https://github.com/ssupt/omarchy-audio-control.git --enable -y &
-    omarchy plugin add https://github.com/gigasolo/omavoice.git --enable -y &
-    omarchy plugin add https://github.com/marconn01/live-f1.git --enable -y &
+    omarchy plugin add https://github.com/crmne/omarchy-hyprmoncfg.git --enable -y &          # posicion de monitores
+    omarchy plugin add https://github.com/bscott/cliamp-oma-plugin.git --enable -y &          # cliamp musica radio
+    omarchy plugin add https://github.com/SirJul1337/omarchy-lock-explorer.git --enable -y &  # market de lockscreen
+    omarchy plugin add https://github.com/brianblakely/omarchy-plugins.git --enable -y &      # plugin manager
+    omarchy plugin add https://github.com/ussego/otoru.git --enable -y &                      # descarga media desde links
+    omarchy plugin add https://github.com/tornikegomareli/omarchy-spaces.git --enable -y &    # iconos en tabs de workspaces
+    omarchy plugin add https://github.com/edgarsilva/omarchy-hw-monitor.git --enable -y &     # porcentajes de hw en topbar
+    omarchy plugin add https://github.com/ssupt/omarchy-bluetooth-audio.git --enable -y &     # opciones avanzadas en bluetooth
+    omarchy plugin add https://github.com/ssupt/omarchy-audio-control.git --enable -y &       # opciones avanzadas en audio
+    omarchy plugin add https://github.com/gigasolo/omavoice.git --enable -y &                 # filtra ruido en el mic
+    omarchy plugin add https://github.com/gfhdhytghd/hymission.git --enable -y &              # mission control
     wait
 }
 
@@ -62,67 +63,72 @@ remove_ugly_themes() {
     sudo rm -rf /usr/share/omarchy/themes/matte-black
 }
 
-REPO_RAW_URL="https://raw.githubusercontent.com/FranElfers/dotfiles/master"
+REPO_URL="https://github.com/FranElfers/dotfiles.git"
+REPO_DIR=""
+
+# Clona el repo una sola vez en un directorio temporal (se borra al salir).
+clone_repo() {
+    [ -n "$REPO_DIR" ] && return
+    REPO_DIR=$(mktemp -d)
+    git clone --depth 1 --quiet "$REPO_URL" "$REPO_DIR" || { echo "No se pudo clonar $REPO_URL" >&2; exit 1; }
+}
 
 download_configs() {
+    clone_repo
 
-    echo "Descargando .gitignore..."
-    curl -fSL "$REPO_RAW_URL/gitignore" -o "$USER_HOME/.gitignore"
-    [ -n "$SUDO_USER" ] && chown "$SUDO_USER:" "$USER_HOME/.gitignore"
-
-    download_config() {
-        local dest="$USER_HOME/$1"
+    # Copia un archivo del repo a su ruta en HOME, pisando lo que exista.
+    copy_config() {
+        local src="$REPO_DIR/${2:-$1}" dest="$USER_HOME/$1"
         mkdir -p "$(dirname "$dest")"
-        curl -fSL "$REPO_RAW_URL/$1" -o "$dest"
-        [ -n "$SUDO_USER" ] && chown "$SUDO_USER:" "$dest"
+        cp -f "$src" "$dest"
+        if [ -n "$SUDO_USER" ]; then chown "$SUDO_USER:" "$dest"; fi
     }
 
-    download_config .bash_profile
-    download_config .bashrc
-    download_config .claude/settings.json
-    download_config .config/btop/btop.conf
-    download_config .config/cliamp/config.toml
-    download_config .config/cliamp/playlists/radio-stations.toml
-    download_config .config/chromium/Default/Bookmarks
-    download_config .config/fastfetch/config.jsonc
-    download_config .config/foot/foot.ini
-    download_config .config/gtk-3.0/bookmarks
-    download_config .config/htop/htoprc
-    download_config .config/hymission/omarchy.lua
-    download_config .config/hypr/.luarc.json
-    download_config .config/hypr/bindings.lua
-    download_config .config/hypr/hyprland.lua
-    download_config .config/hypr/input.lua
-    download_config .config/hypr/looknfeel.lua
-    download_config .config/hypr/monitors.lua
-    download_config .config/omarchy/audio-preferences.json
-    download_config .config/omarchy/audio-rules.json
-    download_config .config/omarchy/branding/about.txt
-    download_config .config/omarchy/branding/screensaver.txt
-    download_config .config/omarchy/defaults/agent
-    download_config .config/omarchy/shell.json
-    download_config .config/omarchy/ussego.otoru.json
-    download_config .config/opencode/opencode.json
-    download_config .config/starship.toml
-    download_config .config/yazi/yazi.toml
-    download_config .config/zed/keymap.json
-    download_config .config/zed/settings.json
-    download_config .gemini/antigravity-cli/settings.json
-    download_config .local/bin/quickshell
-    download_config .local/state/omarchy/defaults/editor
-    download_config .local/state/omarchy/powerprofiles/battery
-    download_config .nanorc
+    copy_config .gitignore gitignore
+    copy_config .bash_profile
+    copy_config .bashrc
+    copy_config .claude/settings.json
+    copy_config .config/btop/btop.conf
+    copy_config .config/cliamp/config.toml
+    copy_config .config/cliamp/playlists/radio-stations.toml
+    copy_config .config/chromium/Default/Bookmarks
+    copy_config .config/fastfetch/config.jsonc
+    copy_config .config/foot/foot.ini
+    copy_config .config/gtk-3.0/bookmarks
+    copy_config .config/htop/htoprc
+    copy_config .config/hymission/omarchy.lua
+    copy_config .config/hypr/.luarc.json
+    copy_config .config/hypr/bindings.lua
+    copy_config .config/hypr/hyprland.lua
+    copy_config .config/hypr/input.lua
+    copy_config .config/hypr/looknfeel.lua
+    copy_config .config/hypr/monitors.lua
+    copy_config .config/omarchy/audio-preferences.json
+    copy_config .config/omarchy/audio-rules.json
+    copy_config .config/omarchy/branding/about.txt
+    copy_config .config/omarchy/branding/screensaver.txt
+    copy_config .config/omarchy/defaults/agent
+    copy_config .config/omarchy/shell.json
+    copy_config .config/omarchy/ussego.otoru.json
+    copy_config .config/opencode/opencode.json
+    copy_config .config/starship.toml
+    copy_config .config/yazi/yazi.toml
+    copy_config .config/zed/keymap.json
+    copy_config .config/zed/settings.json
+    copy_config .gemini/antigravity-cli/settings.json
+    copy_config .local/bin/quickshell
+    copy_config .local/state/omarchy/defaults/editor
+    copy_config .local/state/omarchy/powerprofiles/battery
+    copy_config .nanorc
 }
 
 custom_login_theme() {
     SDDM="/usr/share/sddm/themes/omarchy"
     PLYMOUTH="/usr/share/plymouth/themes/omarchy"
 
-    curl -fsSL "$REPO_RAW_URL/loginscreen/Main.qml" | sudo tee "$SDDM/Main.qml" > /dev/null
-    curl -fsSL "$REPO_RAW_URL/loginscreen/omarchy.script" | sudo tee "$PLYMOUTH/omarchy.script" > /dev/null
-    curl -fsSL "$REPO_RAW_URL/loginscreen/entry.png" | sudo tee "$SDDM/entry.png" > /dev/null
-    curl -fsSL "$REPO_RAW_URL/loginscreen/logo.png" | sudo tee "$SDDM/logo.png" > /dev/null
-    curl -fsSL "$REPO_RAW_URL/loginscreen/wallpaper.png" | sudo tee "$SDDM/wallpaper.png" > /dev/null
+    clone_repo
+    sudo cp -f "$REPO_DIR"/loginscreen/{Main.qml,entry.png,logo.png,wallpaper.png} "$SDDM/"
+    sudo cp -f "$REPO_DIR/loginscreen/omarchy.script" "$PLYMOUTH/"
 
     sudo cp "$SDDM/entry.png" "$SDDM/logo.png" "$SDDM/wallpaper.png" "$PLYMOUTH/"
     sudo chmod 644 "$SDDM/Main.qml" "$SDDM"/*.png "$PLYMOUTH/omarchy.script" "$PLYMOUTH"/*.png

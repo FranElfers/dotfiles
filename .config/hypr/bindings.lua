@@ -36,12 +36,6 @@ hl.unbind("PRINT")
 o.bind("PRINT", "Screenshot to clipboard", "omarchy capture screenshot smart copy")
 
 
--- SUPER+L: toggle dwindle <-> floating (new windows open floating) per workspace.
-hl.unbind("SUPER + L")
-o.bind("SUPER + L", "Toggle floating-by-default workspace", os.getenv("HOME") .. "/.config/hypr/scripts/workspace-float-toggle")
-
-local float_dir = os.getenv("HOME") .. "/.local/state/omarchy/floating-workspaces/"
-
 -- Per-app geometry of floating windows, remembered across closes.
 -- File format: class<TAB>x<TAB>y<TAB>w<TAB>h per line.
 -- ponytail: no monitor-layout check; delete the file if windows land off-screen.
@@ -55,11 +49,6 @@ end
 if geo_in then geo_in:close() end
 
 hl.on("window.open", function(w)
-  local f = w.workspace and io.open(float_dir .. w.workspace.id)
-  if f then
-    f:close()
-    hl.dispatch(hl.dsp.window.float({ action = "enable", window = w }))
-  end
   local g = geo[w.class]
   if g and w.floating then
     hl.dispatch(hl.dsp.window.resize({ x = g[3], y = g[4], exact = true, window = w }))

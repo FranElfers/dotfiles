@@ -18,13 +18,13 @@ backup_config .config/fastfetch/config.jsonc
 backup_config .config/foot/foot.ini
 backup_config .config/gtk-3.0/bookmarks
 backup_config .config/htop/htoprc
+backup_config .config/hymission/omarchy.lua
 backup_config .config/hypr/.luarc.json
 backup_config .config/hypr/bindings.lua
 backup_config .config/hypr/hyprland.lua
 backup_config .config/hypr/input.lua
 backup_config .config/hypr/looknfeel.lua
 backup_config .config/hypr/monitors.lua
-backup_config .config/hypr/scripts/workspace-float-toggle
 backup_config .config/omarchy/audio-preferences.json
 backup_config .config/omarchy/audio-rules.json
 backup_config .config/omarchy/branding/about.txt
@@ -41,5 +41,4 @@ backup_config .gemini/antigravity-cli/settings.json
 backup_config .local/bin/quickshell
 backup_config .local/state/omarchy/defaults/editor
 backup_config .local/state/omarchy/powerprofiles/battery
-backup_config .local/state/omarchy/workspace-layouts/1.lua
 backup_config .nanorc

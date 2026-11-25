@@ -88,13 +88,13 @@ download_configs() {
     download_config .config/foot/foot.ini
     download_config .config/gtk-3.0/bookmarks
     download_config .config/htop/htoprc
+    download_config .config/hymission/omarchy.lua
     download_config .config/hypr/.luarc.json
     download_config .config/hypr/bindings.lua
     download_config .config/hypr/hyprland.lua
     download_config .config/hypr/input.lua
     download_config .config/hypr/looknfeel.lua
     download_config .config/hypr/monitors.lua
-    download_config .config/hypr/scripts/workspace-float-toggle
     download_config .config/omarchy/audio-preferences.json
     download_config .config/omarchy/audio-rules.json
     download_config .config/omarchy/branding/about.txt
@@ -111,7 +111,6 @@ download_configs() {
     download_config .local/bin/quickshell
     download_config .local/state/omarchy/defaults/editor
     download_config .local/state/omarchy/powerprofiles/battery
-    download_config .local/state/omarchy/workspace-layouts/1.lua
     download_config .nanorc
 }
 

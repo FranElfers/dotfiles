@@ -87,13 +87,18 @@ download_configs() {
     copy_config .gitignore gitignore
     copy_config .bash_profile
     copy_config .bashrc
+    copy_config .claude/CLAUDE.md
     copy_config .claude/settings.json
+    copy_config .config/autostart/localsend_app.desktop
     copy_config .config/btop/btop.conf
     copy_config .config/cliamp/config.toml
     copy_config .config/cliamp/playlists/radio-stations.toml
     copy_config .config/chromium/Default/Bookmarks
     copy_config .config/fastfetch/config.jsonc
+    copy_config .config/fontconfig/fonts.conf
     copy_config .config/foot/foot.ini
+    copy_config .config/ghostty/config
+    copy_config .config/ghostty/shaders/typing.glsl
     copy_config .config/gtk-3.0/bookmarks
     copy_config .config/htop/htoprc
     copy_config .config/hymission/omarchy.lua

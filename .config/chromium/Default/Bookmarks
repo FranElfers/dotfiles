@@ -1,5 +1,5 @@
 {
-   "checksum": "afe7ebf0c9dec74469a19d4e02527094",
+   "checksum": "c3a6dad610fb88dc323ef0ff171dd922",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -27,7 +27,7 @@
                "url": "https://app.notion.com/p/franciscoelfers/Inform-tica-30d9ebc5cca14b259a48cbd50e59193e"
             }, {
                "date_added": "13434006105826185",
-               "date_last_used": "13439885012129019",
+               "date_last_used": "13440261120007655",
                "guid": "8ed6c5d6-30bf-4bea-b31f-3f0ae1fab042",
                "id": "16",
                "meta_info": {
@@ -57,7 +57,7 @@
             "url": "https://x.com/i/history"
          }, {
             "date_added": "13432882958956495",
-            "date_last_used": "13440041250366926",
+            "date_last_used": "13440275998650920",
             "guid": "5593b2bf-13d7-4136-a763-6471754dc8f2",
             "id": "7",
             "meta_info": {
@@ -68,7 +68,7 @@
             "url": "https://gemini.google.com/app"
          }, {
             "date_added": "13432916193516911",
-            "date_last_used": "13439758911050732",
+            "date_last_used": "13440259774303056",
             "guid": "1b80459f-e2b1-426d-b495-15fd790dbcf2",
             "id": "9",
             "meta_info": {
@@ -79,7 +79,7 @@
             "url": "https://mail.google.com/mail/u/0/#inbox"
          }, {
             "date_added": "13433136435832497",
-            "date_last_used": "13439945656708614",
+            "date_last_used": "13440260495881467",
             "guid": "ffdf63e7-9ffa-4f3c-874b-df41e3141e0f",
             "id": "11",
             "meta_info": {
@@ -102,74 +102,129 @@
          }, {
             "children": [ {
                "date_added": "13434342138338876",
-               "date_last_used": "13434765768698647",
+               "date_last_used": "13440261059542656",
                "guid": "b78b2ebe-136e-43d4-b743-882dd8d6e147",
                "id": "22",
                "meta_info": {
                   "power_bookmark_meta": ""
                },
-               "name": "mutonby/openshorts",
+               "name": "Openshorts: Clipea videos",
                "type": "url",
                "url": "https://github.com/mutonby/openshorts"
             }, {
                "date_added": "13434342143321029",
-               "date_last_used": "0",
+               "date_last_used": "13440261027136412",
                "guid": "dd1a6eac-c75b-478f-8bf7-2651f71d2173",
                "id": "23",
                "meta_info": {
                   "power_bookmark_meta": ""
                },
-               "name": "presenton/presenton",
+               "name": "Presenton: Generador de presentaciones",
                "type": "url",
                "url": "https://github.com/presenton/presenton"
             }, {
                "date_added": "13434342132622921",
-               "date_last_used": "0",
+               "date_last_used": "13440260948239641",
                "guid": "da72e7ec-4185-461d-a2f6-c2b5e5f4d70b",
                "id": "21",
                "meta_info": {
                   "power_bookmark_meta": ""
                },
-               "name": "every-app/open-seo",
+               "name": "Open-seo: SEO tool",
                "type": "url",
                "url": "https://github.com/every-app/open-seo"
             }, {
                "date_added": "13434342127341149",
-               "date_last_used": "13437546798058249",
+               "date_last_used": "13440260820132885",
                "guid": "b46a3117-7070-414b-8635-c753a8e0244d",
                "id": "20",
                "meta_info": {
                   "power_bookmark_meta": ""
                },
-               "name": "langgenius/dify",
+               "name": "Dify: Crear apps con IA generativa",
                "type": "url",
                "url": "https://github.com/langgenius/dify"
             }, {
                "date_added": "13434342113525945",
-               "date_last_used": "13439279091239420",
+               "date_last_used": "13440260621659922",
                "guid": "2b696cfe-66cc-40a4-9ced-001420322cce",
                "id": "19",
                "meta_info": {
                   "power_bookmark_meta": ""
                },
-               "name": "D4Vinci/Scrapling",
+               "name": "Scrapling: Scrapper general",
                "type": "url",
                "url": "https://github.com/D4Vinci/Scrapling"
             }, {
                "date_added": "13434342170133916",
-               "date_last_used": "0",
+               "date_last_used": "13440260570359785",
                "guid": "492ebc2e-8fef-4f32-9362-01fe40b7aaca",
                "id": "25",
                "meta_info": {
                   "power_bookmark_meta": ""
                },
-               "name": "vladkens/twscrape",
+               "name": "Twscrape: Scrapper de X",
                "type": "url",
                "url": "https://github.com/vladkens/twscrape"
+            }, {
+               "date_added": "13440209713346064",
+               "date_last_used": "13440258277608657",
+               "guid": "af14c754-f2a9-4c34-859e-797d582a76a6",
+               "id": "39",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Chatterbox: Generador audio",
+               "type": "url",
+               "url": "https://github.com/resemble-ai/chatterbox"
+            }, {
+               "date_added": "13440258231366777",
+               "date_last_used": "13440260692238155",
+               "guid": "586af317-d37c-4405-8b60-080c526334bc",
+               "id": "41",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Superpowers: Skills de dev",
+               "type": "url",
+               "url": "https://github.com/obra/superpowers"
+            }, {
+               "date_added": "13440258239663700",
+               "date_last_used": "13440260785660702",
+               "guid": "d7146423-0993-4748-9c97-a7e555d0bcb0",
+               "id": "42",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Phonebox: Desk panel para Android",
+               "type": "url",
+               "url": "https://github.com/ersinkoc/phonebox"
+            }, {
+               "date_added": "13440263917090250",
+               "date_last_used": "0",
+               "guid": "6a964f7c-d1e8-43d4-83fa-a9b09c1b86ea",
+               "id": "44",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Solidcraft: Parametric 3D CAD app",
+               "type": "url",
+               "url": "https://github.com/tangency-labs/solidcraft"
+            }, {
+               "date_added": "13440276851554312",
+               "date_last_used": "0",
+               "guid": "d581f3a2-131e-4b5b-8d9d-917e5fe03932",
+               "id": "45",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Raea: Render Anything Engine",
+               "type": "url",
+               "url": "https://github.com/shinyobjectz/raea"
             } ],
             "date_added": "13434342154895697",
             "date_last_used": "0",
-            "date_modified": "13434589311175508",
+            "date_modified": "13440276851554312",
             "guid": "d0936320-f936-4d51-a4c9-4753eba0b032",
             "id": "24",
             "name": "Repos",
@@ -219,7 +274,7 @@
          } ],
          "date_added": "13432850148791378",
          "date_last_used": "0",
-         "date_modified": "13436126448717421",
+         "date_modified": "13440209713346064",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",

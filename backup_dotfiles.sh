@@ -9,13 +9,18 @@ backup_config() {
 
 backup_config .bash_profile
 backup_config .bashrc
+backup_config .claude/CLAUDE.md
 backup_config .claude/settings.json
+backup_config .config/autostart/localsend_app.desktop
 backup_config .config/btop/btop.conf
 backup_config .config/cliamp/config.toml
 backup_config .config/cliamp/playlists/radio-stations.toml
 backup_config .config/chromium/Default/Bookmarks
 backup_config .config/fastfetch/config.jsonc
+backup_config .config/fontconfig/fonts.conf
 backup_config .config/foot/foot.ini
+backup_config .config/ghostty/config
+backup_config .config/ghostty/shaders/typing.glsl
 backup_config .config/gtk-3.0/bookmarks
 backup_config .config/htop/htoprc
 backup_config .config/hymission/omarchy.lua

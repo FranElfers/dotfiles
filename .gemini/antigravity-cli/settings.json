@@ -1,6 +1,6 @@
 {
   "allowNonWorkspaceAccess": true,
-  "model": "Gemini 4 Argon (Medium)",
+  "model": "Gemini 4 Neon (High)",
   "notifications": true,
   "permissions": {
     "allow": [

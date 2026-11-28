@@ -31,6 +31,7 @@
 .claude.json
 .claude/.credentials.json
 .claude/.last-cleanup
+.claude/CLAUDE.md
 .claude/chrome/chrome-native-host
 .claude/daemon/
 .claude/file-history/
@@ -43,6 +44,7 @@
 .claude/sessions/
 .claude/settings.json
 .claude/shell-snapshots/
+.claude/skills/
 .claude/skills/.trash/
 .claude/skills/synced/
 .claude/state/mcp-discover-verdicts.json
@@ -118,7 +120,9 @@
 .config/Omacom/omacalc.conf
 .config/Omacom/omawrite.conf
 .config/QtProject.conf
+.config/antigravity/credential-user-scope
 .config/atmos/channel
+.config/autostart/localsend_app.desktop
 .config/blender/5.2/config/bookmarks.txt
 .config/blender/5.2/config/platform_support.txt
 .config/blender/5.2/config/recent-files.txt
@@ -137,9 +141,12 @@
 .config/dconf/user
 .config/fastfetch/config.jsonc
 .config/fcitx*/
+.config/fontconfig/fonts.conf
 .config/foot/foot.ini
 .config/gh/config.yml
 .config/gh/hosts.yml
+.config/ghostty/config
+.config/ghostty/shaders/typing.glsl
 .config/git/config
 .config/go/
 .config/google-chrome*/
@@ -160,6 +167,7 @@
 .config/mozilla/
 .config/nvim/
 .config/obsidian/
+.config/omacom/
 .config/omarchy/*.json*.lock
 .config/omarchy/audio-preferences.json
 .config/omarchy/branding/about.txt
@@ -224,6 +232,7 @@
 .local/bin/atmos
 .local/bin/llama
 .local/share/
+.local/share/applications/
 .local/state/**/clipboard*
 .local/state/Omarchy/omasnap/recent/
 .local/state/fastpotify/
@@ -244,10 +253,14 @@
 .local/state/omarchy/notifications/
 .local/state/omarchy/powerprofiles/battery
 .local/state/omarchy/theme-backgrounds/
+.local/state/omarchy/window-geometry.tsv
 .local/state/omarchy/windows/about.fit
+.local/state/omarchy/workspace-layout-notification
 .local/state/omarchy/workspace-layouts/1.lua
+.local/state/omarchy/workspace-layouts/2.lua
 .local/state/opencode/
 .local/state/pnpm/pnpm-state.json
+.local/state/raea/raea/
 .local/state/skills/.skill-lock.json
 .local/state/spotifast/
 .local/state/syncthing/
@@ -263,6 +276,8 @@
 .pi/agent/themes/omarchy-system.json
 .pki/
 .pulse-cookie
+.raea/bin/
+.raea/share/raea/
 .rustup/toolchains/
 .rustup/update-hashes/
 .ssh/

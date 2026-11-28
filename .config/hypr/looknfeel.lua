@@ -54,16 +54,31 @@ hl.config({
         blur = {
             enabled = true,
             popups = true,
-            size = 8,
+            size = 3,
+            passes = 2,
+            vibrancy = 0.2,
+            noise = 0.02,
+            contrast = 1.0,
+            brightness = 1.5,
         },
-        rounding = 8,
-        rounding_power = 2.0,
+        rounding = 12,
+        -- 4.0 = squircle (macOS continuous corners); 2.0 = circular
+        rounding_power = 4.0,
+        shadow = {
+            enabled = true,
+            range = 40,
+            render_power = 2,
+            color = "rgba(00000048)",
+            color_inactive = "rgba(00000022)",
+            offset = "0 8",
+        },
     },
     general = {
         border_size = 1,
         col = {
-            active_border = "0xff7daea3",
-            inactive_border = "0xaa595959",
+            -- macOS-style: bright top edge fading out toward the bottom
+            active_border = { colors = { "rgba(ffffff44)", "rgba(ffffff14)", "rgba(ffffff08)" }, angle = 45 },
+            inactive_border = { colors = { "rgba(ffffff22)", "rgba(ffffff08)" }, angle = 50 },
         },
         gaps_in = 3,
         gaps_out = 5,

@@ -15,9 +15,11 @@
     }
   },
   "outputStyle": "Concise",
+  "feedbackDrafts": "notify",
+  "spinnerTipsEnabled": false,
   "modelSettings": {
     "claude-opus-5-5": {
-      "effortLevel": "high",
+      "effortLevel": "medium",
       "autoCompactWindow": 600000
     },
     "claude-sonnet-5-5": {
@@ -27,9 +29,12 @@
       "effortLevel": "high"
     }
   },
+  "awaySummaryEnabled": false,
   "theme": "auto",
   "editorMode": "normal",
   "preferredNotifChannel": "iterm2",
+  "idleCompaction": false,
+  "switchModelsOnFlag": false,
   "inputNeededNotifEnabled": true,
   "agentPushNotifEnabled": true,
   "autoMode": {
@@ -59,6 +64,5 @@
       "**Trusted repo**: franelfers/network-scan (public GitHub repo, working directory /home/fran/repos/franelfers/network-scan) and its origin remote",
       "**Org-specific CLIs**: None configured — routine CLIs for this repo are go, nmap, gofmt, btmgmt (per CLAUDE.md); btmgmt invocations use sudo for Bluetooth scanning as documented"
     ]
-  },
-  "switchModelsOnFlag": false
+  }
 }
